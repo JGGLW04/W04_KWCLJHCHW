@@ -35,7 +35,8 @@ namespace MoreMountains.CorgiEngine
 		Swap,
 		TimeControl,
 		WallCling,
-		WallJump
+		WallJump,
+		SpawnSquare,
 	}
 
 	/// <summary>
