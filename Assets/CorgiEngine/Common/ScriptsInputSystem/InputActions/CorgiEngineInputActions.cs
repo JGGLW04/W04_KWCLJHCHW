@@ -217,6 +217,15 @@ namespace MoreMountains.CorgiEngine
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Spawn"",
+                    ""type"": ""Button"",
+                    ""id"": ""28fc1716-a144-4185-8e93-ef81b78c6f92"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -703,6 +712,17 @@ namespace MoreMountains.CorgiEngine
                     ""action"": ""Roll"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8fa62dcc-dd82-4d3d-b597-cbd4c6bf0b38"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Spawn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -755,6 +775,7 @@ namespace MoreMountains.CorgiEngine
             m_PlayerControls_SwitchCharacter = m_PlayerControls.FindAction("SwitchCharacter", throwIfNotFound: true);
             m_PlayerControls_TimeControl = m_PlayerControls.FindAction("TimeControl", throwIfNotFound: true);
             m_PlayerControls_Roll = m_PlayerControls.FindAction("Roll", throwIfNotFound: true);
+            m_PlayerControls_Spawn = m_PlayerControls.FindAction("Spawn", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -837,6 +858,7 @@ namespace MoreMountains.CorgiEngine
         private readonly InputAction m_PlayerControls_SwitchCharacter;
         private readonly InputAction m_PlayerControls_TimeControl;
         private readonly InputAction m_PlayerControls_Roll;
+        private readonly InputAction m_PlayerControls_Spawn;
         public struct PlayerControlsActions
         {
             private @CorgiEngineInputActions m_Wrapper;
@@ -862,6 +884,7 @@ namespace MoreMountains.CorgiEngine
             public InputAction @SwitchCharacter => m_Wrapper.m_PlayerControls_SwitchCharacter;
             public InputAction @TimeControl => m_Wrapper.m_PlayerControls_TimeControl;
             public InputAction @Roll => m_Wrapper.m_PlayerControls_Roll;
+            public InputAction @Spawn => m_Wrapper.m_PlayerControls_Spawn;
             public InputActionMap Get() { return m_Wrapper.m_PlayerControls; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -934,6 +957,9 @@ namespace MoreMountains.CorgiEngine
                 @Roll.started += instance.OnRoll;
                 @Roll.performed += instance.OnRoll;
                 @Roll.canceled += instance.OnRoll;
+                @Spawn.started += instance.OnSpawn;
+                @Spawn.performed += instance.OnSpawn;
+                @Spawn.canceled += instance.OnSpawn;
             }
 
             private void UnregisterCallbacks(IPlayerControlsActions instance)
@@ -1001,6 +1027,9 @@ namespace MoreMountains.CorgiEngine
                 @Roll.started -= instance.OnRoll;
                 @Roll.performed -= instance.OnRoll;
                 @Roll.canceled -= instance.OnRoll;
+                @Spawn.started -= instance.OnSpawn;
+                @Spawn.performed -= instance.OnSpawn;
+                @Spawn.canceled -= instance.OnSpawn;
             }
 
             public void RemoveCallbacks(IPlayerControlsActions instance)
@@ -1059,6 +1088,7 @@ namespace MoreMountains.CorgiEngine
             void OnSwitchCharacter(InputAction.CallbackContext context);
             void OnTimeControl(InputAction.CallbackContext context);
             void OnRoll(InputAction.CallbackContext context);
+            void OnSpawn(InputAction.CallbackContext context);
         }
     }
 }
