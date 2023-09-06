@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 3885356412335694786}
   - component: {fileID: 3885077542104908166}
   - component: {fileID: 8630890809398155559}
+  - component: {fileID: 5234847644496101332}
   m_Layer: 9
   m_Name: VikingBase
   m_TagString: Player
@@ -811,6 +812,26 @@ MonoBehaviour:
   PreventClimbingPastStairs: 1
   PreventClimbingRaycastOffset: {x: 0.22, y: 0.2, z: 0}
   PreventClimbingRaycastLength: 0.5
+--- !u!114 &5234847644496101332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3782454711295270328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4b0c5bff1f0a94584b5b08f12ae462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  Order: 0
+  PlayerID: Player1
 --- !u!1 &4133574864389995551
 GameObject:
   m_ObjectHideFlags: 0
