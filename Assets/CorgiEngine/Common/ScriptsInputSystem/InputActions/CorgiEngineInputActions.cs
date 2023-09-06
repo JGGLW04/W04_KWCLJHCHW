@@ -640,6 +640,17 @@ namespace MoreMountains.CorgiEngine
                 },
                 {
                     ""name"": """",
+                    ""id"": ""70a65068-f2d0-40f1-b86c-82bbf907910e"",
+                    ""path"": ""<Keyboard>/h"",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Grab"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""d9fae8f2-4551-45fd-a9e6-8a9b1f34964c"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": ""Press(behavior=2)"",
