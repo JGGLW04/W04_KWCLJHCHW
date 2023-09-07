@@ -70,6 +70,7 @@ public class CharacterAbilitySpawnSquare : CharacterAbility
                 Destroy(_spawnedSquare);
             }
             _spawnedSquare = GameObject.Instantiate(Square, this.transform.position + (Vector3)SquareOffset, new(0, 0, 0, 0));
+            _spawnedSquare.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
             _spawnedSquare.transform.parent = this.transform;
             _holdSquare = true;
         }
@@ -77,7 +78,7 @@ public class CharacterAbilitySpawnSquare : CharacterAbility
         {
             if (_spawnedSquare != null)
             {
-                _spawnedSquare.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+                _spawnedSquare.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
                 _spawnedSquare.transform.parent = GameObject.Find("Squares").transform;
                 _holdSquare = false;
             }
