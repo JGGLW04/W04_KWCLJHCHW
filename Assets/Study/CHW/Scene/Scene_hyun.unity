@@ -480,6 +480,37 @@ MonoBehaviour:
   Square: {fileID: 1903313027811472173, guid: 42f187157f2da0a41be359e706cec511, type: 3}
   SquareOffset: {x: 0, y: 1}
   WalkSpeed: 6
+--- !u!114 &2046101689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046101646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d935b014254b1e498815f17116cac6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  RaycastDirection: {x: 0, y: -1, z: 0}
+  RaycastDistance: 1
+  DetectionLayerMask:
+    serializedVersion: 2
+    m_Bits: 8448
+  Grabbing: 0
+  CarryParent: {fileID: 0}
+  Carrying: 0
+  CarryingID: -1
+  CarriedObject: {fileID: 0}
+  ThrowForce: 1
+  RecoilModifier: 1
+  Throwing: 0
 --- !u!1001 &5068082255570179774
 PrefabInstance:
   m_ObjectHideFlags: 0
