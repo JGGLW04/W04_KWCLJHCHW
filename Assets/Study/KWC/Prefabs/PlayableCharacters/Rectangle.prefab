@@ -194,3 +194,24 @@ MonoBehaviour:
   ThrowForce: 1
   RecoilModifier: 1
   Throwing: 0
+--- !u!114 &8784864702225393509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2593362504458408085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97e0675f9acad6c46ab411b561b4e77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  Square: {fileID: 5191073462219671194, guid: 542dc64cf5e97564e880fd159ed2eec7, type: 3}
+  SquareOffset: {x: 0, y: 2}
+  WalkSpeed: 6
