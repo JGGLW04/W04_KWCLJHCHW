@@ -27,12 +27,12 @@ public class CharacterAbilitySpawnSquare : CharacterAbility
     protected override void HandleInput()
     {
         base.HandleInput();
-        if (_inputManager.GlideButton.State.CurrentState == MMInput.ButtonStates.ButtonDown)
+        if (_inputManager.SpawnButton.State.CurrentState == MMInput.ButtonStates.ButtonDown)
         {
             SpawnStart();
         }
 
-        if (_inputManager.GlideButton.State.CurrentState == MMInput.ButtonStates.ButtonUp && _spawning)
+        if (_inputManager.SpawnButton.State.CurrentState == MMInput.ButtonStates.ButtonUp && _spawning)
         {
             SpawnStop();
         }
