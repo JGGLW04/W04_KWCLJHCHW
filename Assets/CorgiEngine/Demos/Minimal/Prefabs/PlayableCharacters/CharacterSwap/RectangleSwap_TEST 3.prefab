@@ -254,9 +254,6 @@ MonoBehaviour:
   StairsMask:
     serializedVersion: 2
     m_Bits: 268435456
-  shieldMask:
-    serializedVersion: 2
-    m_Bits: 1073741824
   DetachmentMethod: 1
   DetachmentLayer:
     _layerIndex: 0
@@ -496,7 +493,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   BlockingWeaponStates: 
   NumberOfJumps: 1
-  JumpHeight: 3
+  JumpHeight: 2
   JumpRestrictions: 0
   ResetCameraOffsetOnJump: 0
   CanJumpDownOneWayPlatforms: 1
