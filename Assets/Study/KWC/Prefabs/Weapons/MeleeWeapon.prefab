@@ -49,7 +49,7 @@ MonoBehaviour:
   InitializeOnStart: 0
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 0.3
+  TimeBetweenUses: 0.2
   TimeBetweenUsesReleaseInterruption: 1
   CooldownDuration: 0
   UseBurstMode: 0
@@ -70,15 +70,15 @@ MonoBehaviour:
   RightHandHandle: {fileID: 0}
   ModifyMovementWhileEquipped: 0
   PermanentMovementMultiplier: 0
-  ModifyMovementWhileAttacking: 0
+  ModifyMovementWhileAttacking: 1
   MovementMultiplier: 0
-  AlwaysResetMultiplierToInitial: 1
-  PreventHorizontalGroundMovementWhileInUse: 0
-  PreventHorizontalAirMovementWhileInUse: 0
+  AlwaysResetMultiplierToInitial: 0
+  PreventHorizontalGroundMovementWhileInUse: 1
+  PreventHorizontalAirMovementWhileInUse: 1
   SetForceWhileInUse: 0
   ForceWhileInUse: {x: 0, y: 0}
   DisableGravityWhileInUse: 0
-  PreventFlipWhileInUse: 0
+  PreventFlipWhileInUse: 1
   Animators: []
   MirrorCharacterAnimatorParameters: 0
   EquippedAnimationParameter: 
