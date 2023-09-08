@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPrefabs:
-  - {fileID: 2593362504467939635, guid: c2798a1dd0f89e941be6a5bcc0590baa, type: 3}
+  - {fileID: 7343444672004360841, guid: 88f39d70e81ed9846b85d3e515208b29, type: 3}
   AutoAttributePlayerIDs: 1
   SceneCharacters: []
   DebugSpawn: {fileID: 1132044354}
@@ -647,7 +647,7 @@ PrefabInstance:
     - target: {fileID: 4342360781542251935, guid: e350b1b2b733d3b4fa40f093cfe1f625,
         type: 3}
       propertyPath: m_Name
-      value: Rectangle Variant
+      value: Rectangle Olaf
       objectReference: {fileID: 0}
     - target: {fileID: 4342360781542551751, guid: e350b1b2b733d3b4fa40f093cfe1f625,
         type: 3}
@@ -703,11 +703,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4655379136348618739, guid: e350b1b2b733d3b4fa40f093cfe1f625,
-        type: 3}
-      propertyPath: Order
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e350b1b2b733d3b4fa40f093cfe1f625, type: 3}
@@ -1994,25 +1989,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3641211420986603924, guid: a985298b47e1a924aa071f6a2ac4940f,
-        type: 3}
-      propertyPath: RaycastDirection.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3641211420986603924, guid: a985298b47e1a924aa071f6a2ac4940f,
-        type: 3}
-      propertyPath: RaycastDirection.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3641211420986603924, guid: a985298b47e1a924aa071f6a2ac4940f,
-        type: 3}
-      propertyPath: DetectionLayerMask.m_Bits
-      value: 68157440
-      objectReference: {fileID: 0}
     - target: {fileID: 4342360781542251935, guid: a985298b47e1a924aa071f6a2ac4940f,
         type: 3}
       propertyPath: m_Name
-      value: Rectangle Variant 1
+      value: Rectangle Baleog
       objectReference: {fileID: 0}
     - target: {fileID: 4342360781542551751, guid: a985298b47e1a924aa071f6a2ac4940f,
         type: 3}
@@ -2068,11 +2048,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4655379136348618739, guid: a985298b47e1a924aa071f6a2ac4940f,
-        type: 3}
-      propertyPath: Order
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a985298b47e1a924aa071f6a2ac4940f, type: 3}
