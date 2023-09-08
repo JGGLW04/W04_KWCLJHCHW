@@ -50,7 +50,7 @@ MonoBehaviour:
   InitializeOnStart: 0
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 1
+  TimeBetweenUses: 0.5
   TimeBetweenUsesReleaseInterruption: 1
   CooldownDuration: 0
   UseBurstMode: 0
@@ -153,7 +153,7 @@ MonoBehaviour:
     RecoilFeedback: {fileID: 0}
   Weapons:
   - TargetWeapon: {fileID: 8469221183518456764}
-    ChargeDuration: 0.2
+    ChargeDuration: 0
     TriggerIfChargeInterrupted: 0
     FlipWhenChargeWeaponFlips: 1
     ChargeStartFeedbacks: {fileID: 0}
@@ -173,53 +173,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1242456777117781264, guid: fc31cd0c76312214fa0baa2c33ec4cb5,
         type: 3}
-      propertyPath: DelayBeforeUse
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1242456777117781264, guid: fc31cd0c76312214fa0baa2c33ec4cb5,
-        type: 3}
-      propertyPath: SpawnPosition.x
-      value: -13.545941
-      objectReference: {fileID: 0}
-    - target: {fileID: 1242456777117781264, guid: fc31cd0c76312214fa0baa2c33ec4cb5,
-        type: 3}
-      propertyPath: SpawnPosition.y
-      value: -2.6107256
-      objectReference: {fileID: 0}
-    - target: {fileID: 1242456777117781264, guid: fc31cd0c76312214fa0baa2c33ec4cb5,
-        type: 3}
-      propertyPath: SpawnPosition.z
-      value: -0.063926354
-      objectReference: {fileID: 0}
-    - target: {fileID: 1242456777117781264, guid: fc31cd0c76312214fa0baa2c33ec4cb5,
-        type: 3}
-      propertyPath: PreventFlipWhileInUse
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1242456777117781264, guid: fc31cd0c76312214fa0baa2c33ec4cb5,
-        type: 3}
-      propertyPath: ModifyMovementWhileEquipped
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1242456777117781264, guid: fc31cd0c76312214fa0baa2c33ec4cb5,
-        type: 3}
-      propertyPath: ModifyMovementWhileAttacking
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1242456777117781264, guid: fc31cd0c76312214fa0baa2c33ec4cb5,
-        type: 3}
-      propertyPath: AlwaysResetMultiplierToInitial
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1242456777117781264, guid: fc31cd0c76312214fa0baa2c33ec4cb5,
-        type: 3}
-      propertyPath: PreventHorizontalAirMovementWhileInUse
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1242456777117781264, guid: fc31cd0c76312214fa0baa2c33ec4cb5,
-        type: 3}
-      propertyPath: PreventHorizontalGroundMovementWhileInUse
-      value: 1
+      propertyPath: TimeBetweenUses
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1242456777117781265, guid: fc31cd0c76312214fa0baa2c33ec4cb5,
         type: 3}
