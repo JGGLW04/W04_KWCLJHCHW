@@ -100,6 +100,7 @@ namespace Vikings
 		protected bool _dashEndedNaturally = true;
 		protected IEnumerator _dashCoroutine;
 		protected CharacterDive _characterDive;
+		protected CharacterHandleWeapon _characterHandleWeapon;
 		protected float _lastDashAt = 0f;
 		protected float _averageDistancePerFrame;
 		protected int _startFrame;
@@ -117,6 +118,7 @@ namespace Vikings
 			base.Initialization();
 			Aim.Initialization();
 			_characterDive = _character?.FindAbility<CharacterDive>();
+			_characterHandleWeapon = _character?.FindAbility<CharacterHandleWeapon>();
 			SuccessiveDashesLeft = SuccessiveDashAmount;
 		}
 
@@ -169,7 +171,8 @@ namespace Vikings
 			{
 				return;
 			}
-
+			
+			_characterHandleWeapon.ShootStart();
 			InitiateDash();
 		}
 
