@@ -7,6 +7,52 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2479366915460033941, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BufferInput
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479366915460033941, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: InitialWeapon
+      value: 
+      objectReference: {fileID: 8227954806162189908, guid: 57787cb2f904179469e1778c1078313a,
+        type: 3}
+    - target: {fileID: 2479366915460033941, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: CanPickupWeapons
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479366915460033941, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: NewInputExtendsBuffer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479366915460033941, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: GettingHitInterruptsAttack
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479366915460033941, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingMovementStates.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479366915460033941, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingConditionStates.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479366915460033941, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingMovementStates.Array.data[0]
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479366915460033941, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingMovementStates.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2593362504457928141, guid: c2798a1dd0f89e941be6a5bcc0590baa,
         type: 3}
       propertyPath: m_RootOrder
@@ -67,6 +113,76 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rectangle Baleog
       objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467885279, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingWeaponStates.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467885279, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingWeaponStates.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467885279, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingWeaponStates.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467885279, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingWeaponStates.Array.data[2]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467885279, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingWeaponStates.Array.data[3]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467885279, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingWeaponStates.Array.data[4]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467909591, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingWeaponStates.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467909591, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingMovementStates.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467909591, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingConditionStates.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467909591, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingWeaponStates.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467909591, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingWeaponStates.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467909591, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingWeaponStates.Array.data[2]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467909591, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingWeaponStates.Array.data[3]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467909591, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: BlockingWeaponStates.Array.data[4]
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2593362504467939635, guid: c2798a1dd0f89e941be6a5bcc0590baa,
         type: 3}
       propertyPath: PlayerID
@@ -94,3 +210,45 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2798a1dd0f89e941be6a5bcc0590baa, type: 3}
+--- !u!1 &4342360781542251935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2593362504458408085, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+    type: 3}
+  m_PrefabInstance: {fileID: 2287357378072825098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-158209014163932632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4342360781542251935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3141ca867f14a464ab5c3a815142ad80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 0e00000003000000
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  InitialWeapon: {fileID: 7257163840313030109, guid: cf1ee10e91f59ec4fab88ecff267472a,
+    type: 3}
+  CanPickupWeapons: 1
+  WeaponAttachment: {fileID: 0}
+  ForceWeaponScaleResetOnEquip: 0
+  ForceWeaponRotationResetOnEquip: 0
+  AutomaticallyBindAnimator: 1
+  AmmoDisplayID: 0
+  ContinuousPress: 0
+  GettingHitInterruptsAttack: 1
+  CanShootFromLadders: 0
+  FaceWeaponDirection: 0
+  InvertHorizontalAimWhenWallclinging: 0
+  ForceAlwaysShoot: 0
+  BufferInput: 1
+  NewInputExtendsBuffer: 0
+  MaximumBufferDuration: 0.25
+  CurrentWeapon: {fileID: 0}
