@@ -215,14 +215,14 @@ namespace MoreMountains.CorgiEngine
 		public override void ProcessAbility()
 		{
 			base.ProcessAbility();
-			if (Carrying && _character.MovementState.CurrentState == CharacterStates.MovementStates.Falling)
+			if (Carrying && _controller.Speed.y < 0f)//_character.MovementState.CurrentState == CharacterStates.MovementStates.Falling)
 			{
 				_vikingGlide.GlideStart();
 			}
-			/*else if (!Carrying)
+			else if (!Carrying && _movement.CurrentState == CharacterStates.MovementStates.Gliding)
 			{
 				_vikingGlide.GlideStop();
-			}*/
+			}
 		}
 
 		/// <summary>
