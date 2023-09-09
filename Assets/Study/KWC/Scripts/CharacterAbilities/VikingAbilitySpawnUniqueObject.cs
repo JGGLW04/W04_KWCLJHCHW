@@ -4,6 +4,14 @@ using UnityEngine;
 using MoreMountains.CorgiEngine;
 using MoreMountains.Tools;
 
+/// <summary>
+/// 이 클래스는 유일한 물체를 소환할 수 있도록 합니다.
+/// 
+/// Animation parameters :
+/// - Spawing, boolean, triggered when an object is spawned
+/// - SpawningID : int, set to whatever value is set on the spawned object
+/// </summary>
+[AddComponentMenu("Viking/Character/Abilities/Viking Spawn Unique Object")]
 public class VikingAbilitySpawnUniqueObject : CharacterAbility
 {
     [Header("Spawn")]
@@ -26,12 +34,10 @@ public class VikingAbilitySpawnUniqueObject : CharacterAbility
     [Tooltip("the layer this grab raycast should look for objects on. This should match the layer you put your GrabCarryAndThrowObjects on")]
     public LayerMask DetectionLayerMask = LayerManager.PlatformsLayerMask | LayerManager.EnemiesLayerMask;
     
-    private GameObject _spawnedObject;
+    protected GameObject _spawnedObject;
     
     protected Vector2 _raycastOrigin;
     protected Vector3 _actualRaycastDirection;
-    
-    protected bool _spawned;
 
     // animation parameters
     protected const string _spawningAnimationParameterName = "Spawning";
@@ -91,12 +97,12 @@ public class VikingAbilitySpawnUniqueObject : CharacterAbility
             return;
         }
         PlayAbilityStartFeedbacks();
-        _spawned = true;
+        
         MMCharacterEvent.Trigger(_character, MMCharacterEventTypes.SpawnSquare, MMCharacterEvent.Moments.Start);
         
-        if (_spawnedSquare != null)
+        if (_spawnedObject != null)
         {
-            Destroy(_spawnedSquare);
+            Destroy(_spawnedObject);
         }
         
         if (_character.IsFacingRight)
@@ -107,7 +113,7 @@ public class VikingAbilitySpawnUniqueObject : CharacterAbility
         {
             SpawnOffset = new Vector2(-Mathf.Abs(SpawnOffset.x), SpawnOffset.y);
         }
-        _spawnedSquare = GameObject.Instantiate(SpawnableObject, this.transform.position + (Vector3)SpawnOffset, new(0, 0, 0, 0));
+        _spawnedObject = GameObject.Instantiate(SpawnableObject, this.transform.position + (Vector3)SpawnOffset, new(0, 0, 0, 0));
 
     }
     
@@ -121,13 +127,15 @@ public class VikingAbilitySpawnUniqueObject : CharacterAbility
     }
     
     /// <summary>
-    /// 능력 초기화 시, 물체를 삭제 및 _spawned를 false로 변경
+    /// 능력 초기화 시, 소환된 물체를 삭제
     /// </summary>
     public override void ResetAbility()
     {
         base.ResetAbility();
-        
-        _spawned = false;
-        Destroy();
+
+        if (_spawnedObject != null)
+        {
+            Destroy(_spawnedObject);
+        }
     }
 }
