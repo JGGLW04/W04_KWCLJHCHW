@@ -34,6 +34,8 @@ public class VikingAbilitySpawnUniqueObject : CharacterAbility
     [Tooltip("the layer this grab raycast should look for objects on. This should match the layer you put your GrabCarryAndThrowObjects on")]
     public LayerMask DetectionLayerMask = LayerManager.PlatformsLayerMask | LayerManager.EnemiesLayerMask;
     
+    protected VikingGrabCarryAndThrow _vikingGrabCarryAndThrow;
+    
     protected GameObject _spawnedObject;
     
     protected Vector2 _raycastOrigin;
@@ -47,6 +49,7 @@ public class VikingAbilitySpawnUniqueObject : CharacterAbility
     protected override void Initialization()
     {
         base.Initialization();
+        _vikingGrabCarryAndThrow = _character?.FindAbility<VikingGrabCarryAndThrow>();
     }
 
     protected override void HandleInput()
@@ -103,6 +106,10 @@ public class VikingAbilitySpawnUniqueObject : CharacterAbility
         if (_spawnedObject != null)
         {
             Destroy(_spawnedObject);
+            // Carry 모드 취소
+            _vikingGrabCarryAndThrow.CarriedObject = null;
+            _vikingGrabCarryAndThrow.CarryingID = -1;
+            _vikingGrabCarryAndThrow.Carrying = false;
         }
         
         if (_character.IsFacingRight)
