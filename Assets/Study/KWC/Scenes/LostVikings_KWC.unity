@@ -956,12 +956,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 642709391}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &647683346 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4882189026461077121, guid: d08b9ff591fdd49479d9bc80109447d5,
-    type: 3}
-  m_PrefabInstance: {fileID: 828951022}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &674179112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1122,31 +1116,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -9042979612350892921, guid: d08b9ff591fdd49479d9bc80109447d5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -9042979612350892921, guid: d08b9ff591fdd49479d9bc80109447d5,
-        type: 3}
-      propertyPath: VerticalForce
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1942585660418643034, guid: d08b9ff591fdd49479d9bc80109447d5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4129779078348683651, guid: d08b9ff591fdd49479d9bc80109447d5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4129779078348683651, guid: d08b9ff591fdd49479d9bc80109447d5,
-        type: 3}
-      propertyPath: CarryParent
-      value: 
-      objectReference: {fileID: 647683346}
     - target: {fileID: 8496778866215006380, guid: d08b9ff591fdd49479d9bc80109447d5,
         type: 3}
       propertyPath: m_Name
