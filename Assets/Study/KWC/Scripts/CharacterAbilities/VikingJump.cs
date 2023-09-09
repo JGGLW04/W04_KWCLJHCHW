@@ -293,11 +293,11 @@ namespace MoreMountains.CorgiEngine
 				}
 			}
 			
-			// if the character is not grounded and Speed.y is negative, but currently jumping, we change its state to Falling
+			/*// if the character is not grounded and Speed.y is negative, but currently jumping, we change its state to Falling
 			if (!_controller.State.IsGrounded && (_controller.Speed.y < 0f) )
 			{
 				_movement.ChangeState(CharacterStates.MovementStates.Falling);
-			}
+			}*/
 
 			UpdateController();
             
