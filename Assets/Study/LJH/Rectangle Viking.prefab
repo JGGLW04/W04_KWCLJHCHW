@@ -526,6 +526,7 @@ MonoBehaviour:
     Physics2DPushForce: 2
     DrawRaycastsGizmos: 1
     DisplayWarnings: 1
+  _isMaxSpeed: 0
   PlatformMask:
     serializedVersion: 2
     m_Bits: 33554688
@@ -1249,7 +1250,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   BlockingWeaponStates: 
   Square: {fileID: 5191073462219671194, guid: 542dc64cf5e97564e880fd159ed2eec7, type: 3}
-  SquareOffset: {x: 0, y: 2}
+  SquareOffset: {x: 2, y: 0}
   WalkSpeed: 6
 --- !u!1 &1621854151695793083
 GameObject:
