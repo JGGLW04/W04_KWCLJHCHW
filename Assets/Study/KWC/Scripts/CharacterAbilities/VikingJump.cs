@@ -35,6 +35,12 @@ namespace MoreMountains.CorgiEngine
 		/// defines how high the character can jump
 		[Tooltip("defines how high the character can jump")]
 		public float JumpHeight = 3.025f;
+		// 달리기 중 점프 시 높이가 더 높아지는지
+		[Tooltip("달리기 중 점프 시 높이가 더 높아지는지")]
+		public bool RunJump = false;
+		/// 최대 속력 도달 시 점프 높이
+		[Tooltip("최대 속력 도달 시 점프 높이")]
+		public float RunJumpHeight = 3.525f;
 		/// basic rules for jumps : where can the player jump ?
 		[Tooltip("basic rules for jumps : where can the player jump ?")]
 		public JumpBehavior JumpRestrictions = JumpBehavior.CanJumpAnywhere;
@@ -526,8 +532,18 @@ namespace MoreMountains.CorgiEngine
 			SetJumpFlags();
 			CanJumpStop = true;
 
-			// we make the character jump
-			_controller.SetVerticalForce(Mathf.Sqrt( 2f * JumpHeight * Mathf.Abs(_controller.Parameters.Gravity) ));
+			if (RunJump && _controller._isMaxSpeed)
+			{
+				Debug.Log("RunJump");
+				// 달리기 점프 (좀 더 높음)
+				_controller.SetVerticalForce(Mathf.Sqrt( 2f * RunJumpHeight * Mathf.Abs(_controller.Parameters.Gravity) ));
+			}
+			else
+			{
+				Debug.Log("NormalJump");
+				// 일반 점프
+				_controller.SetVerticalForce(Mathf.Sqrt( 2f * JumpHeight * Mathf.Abs(_controller.Parameters.Gravity) ));
+			}
 			JumpHappenedThisFrame = true;
 		}
 
