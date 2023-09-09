@@ -123,6 +123,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &5498669
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 969619655854550029, guid: af309a2140832694bb15fbcaebb04e96,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 969619655854550029, guid: af309a2140832694bb15fbcaebb04e96,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969619655854550029, guid: af309a2140832694bb15fbcaebb04e96,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969619655854550029, guid: af309a2140832694bb15fbcaebb04e96,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969619655854550029, guid: af309a2140832694bb15fbcaebb04e96,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 969619655854550029, guid: af309a2140832694bb15fbcaebb04e96,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969619655854550029, guid: af309a2140832694bb15fbcaebb04e96,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969619655854550029, guid: af309a2140832694bb15fbcaebb04e96,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969619655854550029, guid: af309a2140832694bb15fbcaebb04e96,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969619655854550029, guid: af309a2140832694bb15fbcaebb04e96,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969619655854550029, guid: af309a2140832694bb15fbcaebb04e96,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969619655854768469, guid: af309a2140832694bb15fbcaebb04e96,
+        type: 3}
+      propertyPath: m_Name
+      value: Rectangle Viking
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af309a2140832694bb15fbcaebb04e96, type: 3}
 --- !u!1001 &11563438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1278,6 +1347,7 @@ MonoBehaviour:
     Physics2DPushForce: 2
     DrawRaycastsGizmos: 1
     DisplayWarnings: 1
+  _isMaxSpeed: 0
   PlatformMask:
     serializedVersion: 2
     m_Bits: 256
@@ -3516,7 +3586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2f9c99a9e3a83e41a9d2a017a273eea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swapManager: {fileID: 528907493}
 --- !u!1001 &531654200
 PrefabInstance:
   m_ObjectHideFlags: 0
