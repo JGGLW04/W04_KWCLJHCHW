@@ -15,12 +15,12 @@ PrefabInstance:
     - target: {fileID: 2593362504457928141, guid: c2798a1dd0f89e941be6a5bcc0590baa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -13.59
       objectReference: {fileID: 0}
     - target: {fileID: 2593362504457928141, guid: c2798a1dd0f89e941be6a5bcc0590baa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -4.42
       objectReference: {fileID: 0}
     - target: {fileID: 2593362504457928141, guid: c2798a1dd0f89e941be6a5bcc0590baa,
         type: 3}
@@ -67,15 +67,71 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rectangle Wizard
       objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467939635, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: PlayerID
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467939635, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: CharacterType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467957209, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: DefaultParameters.MaxVelocity.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467957209, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: DefaultParameters.MaxVelocity.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467957209, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: DefaultParameters.SpeedAccelerationInAir
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467957209, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: DefaultParameters.SpeedAccelerationOnGround
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467957209, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: DefaultParameters.SpeedDecelerationOnGround
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593362504467957209, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: DefaultParameters.UseSeparateDecelerationOnGround
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472868289754589858, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.56861687
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472868289754589858, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2798a1dd0f89e941be6a5bcc0590baa, type: 3}
+--- !u!4 &4882189026461077121 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1573694864565006008, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+    type: 3}
+  m_PrefabInstance: {fileID: 6203680076631187513}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8496778866215006380 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2593362504458408085, guid: c2798a1dd0f89e941be6a5bcc0590baa,
     type: 3}
   m_PrefabInstance: {fileID: 6203680076631187513}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-5266470134257112409
+--- !u!114 &-9042979612350892921
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,7 +140,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8496778866215006380}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d935b014254b1e498815f17116cac6c, type: 3}
+  m_Script: {fileID: 11500000, guid: a6c79b165df344f59fd911668fc68b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AbilityStartFeedbacks: {fileID: 0}
@@ -93,37 +149,62 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  RaycastDirection: {x: 0, y: -1, z: 0}
-  RaycastDistance: 1
+  VerticalForce: -2
+  GlideOnlyIfNoJumpsLeft: 0
+--- !u!114 &1942585660418643034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496778866215006380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91d9791931774dffac54e87b6b383cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  SpawnableObject: {fileID: 5191073462219671194, guid: 542dc64cf5e97564e880fd159ed2eec7,
+    type: 3}
+  SpawnOffset: {x: 2, y: 0}
+  RaycastDirection: {x: 1, y: 0, z: 0}
+  RaycastDistance: 2
   DetectionLayerMask:
     serializedVersion: 2
     m_Bits: 8448
+--- !u!114 &4129779078348683651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496778866215006380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e88a34a1f7d9491f8e8ff4d1a3971172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  RaycastDirection: {x: 1, y: 0, z: 0}
+  RaycastDistance: 1
+  DetectionLayerMask:
+    serializedVersion: 2
+    m_Bits: 67108864
   Grabbing: 0
-  CarryParent: {fileID: 0}
+  CarryParent: {fileID: 4882189026461077121}
   Carrying: 0
   CarryingID: -1
   CarriedObject: {fileID: 0}
   ThrowForce: 1
   RecoilModifier: 1
   Throwing: 0
---- !u!114 &-4392709508709004464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8496778866215006380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97e0675f9acad6c46ab411b561b4e77a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  BlockingWeaponStates: 
-  Square: {fileID: 0}
-  SquareOffset: {x: 0, y: 0}
-  WalkSpeed: 6
