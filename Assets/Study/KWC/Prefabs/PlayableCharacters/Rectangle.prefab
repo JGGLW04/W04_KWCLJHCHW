@@ -133,7 +133,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3782454711289799154, guid: a030eef7f43754545ba77af9a624ae5f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a030eef7f43754545ba77af9a624ae5f, type: 3}
 --- !u!4 &2593362504457928141 stripped
 Transform:
@@ -141,3 +142,42 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1693498527273864493}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2593362504458408085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3782454711295270328, guid: a030eef7f43754545ba77af9a624ae5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1693498527273864493}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-4983327325892089724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2593362504458408085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 527203ef8cea4e9db504528031a5c991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  NumberOfJumps: 1
+  JumpHeight: 3.025
+  JumpRestrictions: 2
+  ResetCameraOffsetOnJump: 0
+  CanJumpDownOneWayPlatforms: 1
+  JumpIsProportionalToThePressTime: 1
+  JumpMinimumAirTime: 0.1
+  JumpReleaseForceFactor: 2
+  CoyoteTime: 0.2
+  InputBufferDuration: 0.2
+  OneWayPlatformsJumpCollisionOffDuration: 0.3
+  MovingPlatformsJumpCollisionOffDuration: 0.05
+  AirJumpFeedbacks: {fileID: 0}
+  DoubleJumpFeedbacks: {fileID: 0}
+  NumberOfJumpsLeft: 0
