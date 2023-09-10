@@ -72,7 +72,7 @@ public class CharacterAbilitySpawnSquare : CharacterAbility
             }
             _spawnedSquare = GameObject.Instantiate(Square, this.transform.position + (Vector3)SquareOffset, new(0, 0, 0, 0));
             //_spawnedSquare.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-            _spawnedSquare.transform.parent = GameObject.Find("Squares").transform;
+            //_spawnedSquare.transform.parent = GameObject.Find("Squares").transform;
           
         }
     }
@@ -84,8 +84,8 @@ public class CharacterAbilitySpawnSquare : CharacterAbility
             StopStartFeedbacks();
             PlayAbilityStopFeedbacks();
             MMCharacterEvent.Trigger(_character, MMCharacterEventTypes.SpawnSquare, MMCharacterEvent.Moments.End);
+            _movement.ChangeState(CharacterStates.MovementStates.Idle);
         }
-        _movement.ChangeState(CharacterStates.MovementStates.Idle);
         _spawning = false;
     }
 
