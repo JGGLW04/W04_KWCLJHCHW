@@ -14,6 +14,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4983327325892089724, guid: c2798a1dd0f89e941be6a5bcc0590baa,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4983327325892089724, guid: c2798a1dd0f89e941be6a5bcc0590baa,
+        type: 3}
       propertyPath: JumpHeight
       value: 1.125
       objectReference: {fileID: 0}
@@ -167,6 +172,41 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5049750626791001018}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1518151317725789610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7343444671997188911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c9ce29648d4c8da09fa81c9c28cd37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  NumberOfJumps: 2
+  JumpHeight: 1.125
+  RunJump: 1
+  RunJumpHeight: 2.125
+  JumpRestrictions: 2
+  ResetCameraOffsetOnJump: 0
+  CanJumpDownOneWayPlatforms: 1
+  JumpIsProportionalToThePressTime: 1
+  JumpMinimumAirTime: 0.1
+  JumpReleaseForceFactor: 2
+  CoyoteTime: 0.2
+  InputBufferDuration: 0.2
+  OneWayPlatformsJumpCollisionOffDuration: 0.3
+  MovingPlatformsJumpCollisionOffDuration: 0.05
+  AirJumpFeedbacks: {fileID: 0}
+  DoubleJumpFeedbacks: {fileID: 0}
+  NumberOfJumpsLeft: 0
 --- !u!114 &1971916709168929831
 MonoBehaviour:
   m_ObjectHideFlags: 0

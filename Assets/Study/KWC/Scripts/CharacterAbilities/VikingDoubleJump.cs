@@ -11,8 +11,8 @@ namespace MoreMountains.CorgiEngine
 	/// Animator parameters : Jumping (bool), DoubleJumping (bool), HitTheGround (bool)
 	/// </summary>
 	[MMHiddenProperties("AbilityStopFeedbacks")]
-	[AddComponentMenu("Viking/Character/Abilities/Viking Jump")] 
-	public class VikingJump : CharacterAbility
+	[AddComponentMenu("Viking/Character/Abilities/Viking Double Jump")] 
+	public class VikingDoubleJump : CharacterAbility
 	{	
 		/// This method is only used to display a helpbox text at the beginning of the ability's inspector
 		public override string HelpBoxText() { return "This component handles jumps. Here you can define the jump height, whether the jump is proportional to the press length or not, the minimum air time (how long a character should stay in the air before being able to go down if the player has released the jump button), a jump window duration (the time during which, after falling off a cliff, a jump is still possible), jump restrictions, how many jumps the character can perform without touching the ground again, and how long collisions should be disabled when exiting 1-way platforms or moving platforms."; }
@@ -31,7 +31,7 @@ namespace MoreMountains.CorgiEngine
 
 		/// the maximum number of jumps allowed (0 : no jump, 1 : normal jump, 2 : double jump, etc...)
 		[Tooltip("the maximum number of jumps allowed (0 : no jump, 1 : normal jump, 2 : double jump, etc...)")]
-		public int NumberOfJumps = 1;
+		public int NumberOfJumps = 2;
 		/// defines how high the character can jump
 		[Tooltip("defines how high the character can jump")]
 		public float JumpHeight = 1.125f;
@@ -67,11 +67,11 @@ namespace MoreMountains.CorgiEngine
 		
 		/// a timeframe during which, after leaving the ground, the character can still trigger a jump
 		[Tooltip("a timeframe during which, after leaving the ground, the character can still trigger a jump")]
-		public float CoyoteTime = 0f;
+		public float CoyoteTime = .2f;
 		
 		/// if the character lands, and the jump button's been pressed during that InputBufferDuration, a new jump will be triggered 
 		[Tooltip("if the character lands, and the jump button's been pressed during that InputBufferDuration, a new jump will be triggered")]
-		public float InputBufferDuration = 0f;
+		public float InputBufferDuration = .2f;
 
 		[Header("Collisions")]
 
@@ -511,6 +511,7 @@ namespace MoreMountains.CorgiEngine
 
 			if (NumberOfJumpsLeft != NumberOfJumps)
 			{
+				Debug.Log("DoubleJump");
 				_doubleJumping = true;
 				DoubleJumpFeedbacks?.PlayFeedbacks();
 			}
