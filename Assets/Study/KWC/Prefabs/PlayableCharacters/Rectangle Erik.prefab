@@ -247,3 +247,6 @@ MonoBehaviour:
   SuccessiveDashResetMethod: 0
   SuccessiveDashResetDuration: 2
   InvincibleWhileDashing: 0
+  KnockbackType: 1
+  KnockbackForce: {x: 6, y: 6}
+  collideSomething: 0
