@@ -151,6 +151,37 @@ MonoBehaviour:
   BlockingWeaponStates: 
   VerticalForce: -2
   GlideOnlyIfNoJumpsLeft: 0
+--- !u!114 &-7088912045573092815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496778866215006380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36de36c839a31624ba91b40f8686d62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  RaycastDirection: {x: 1, y: 0, z: 0}
+  RaycastDistance: 1
+  DetectionLayerMask:
+    serializedVersion: 2
+    m_Bits: 67108864
+  Grabbing: 0
+  CarryParent: {fileID: 4882189026461077121}
+  Carrying: 0
+  CarryingID: -1
+  CarriedObject: {fileID: 0}
+  ThrowForce: 5
+  RecoilModifier: 1
+  Throwing: 0
 --- !u!114 &1942585660418643034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,7 +215,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8496778866215006380}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e88a34a1f7d9491f8e8ff4d1a3971172, type: 3}
   m_Name: 
