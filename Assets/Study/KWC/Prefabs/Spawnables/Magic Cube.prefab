@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 5191073462219671197}
   - component: {fileID: 5191073462219671198}
   - component: {fileID: 5191073462219671265}
+  - component: {fileID: 1687472671485777116}
   m_Layer: 26
   m_Name: Magic Cube
   m_TagString: Untagged
@@ -269,3 +270,15 @@ MonoBehaviour:
   OnThrown:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1687472671485777116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5191073462219671194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70e9c30eea5416b44baad7b261341efd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
