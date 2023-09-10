@@ -117,19 +117,19 @@ MonoBehaviour:
   ApplyRecoilOnHitDamageable: 1
   RecoilOnHitDamageableProperties:
     RecoilForceGrounded: 100
-    RecoilForceAirborne: 1000000
+    RecoilForceAirborne: 100
     RecoilAngleModifier: 0
-    DirectionMultiplier: {x: 1, y: 100}
-    RecoilStyle: 1
+    DirectionMultiplier: {x: 1, y: 1}
+    RecoilStyle: 2
     Delay: 0
     RecoilFeedback: {fileID: 0}
   ApplyRecoilOnHitNonDamageable: 1
   RecoilOnHitNonDamageableProperties:
-    RecoilForceGrounded: 1000000
-    RecoilForceAirborne: 1000000
+    RecoilForceGrounded: 100
+    RecoilForceAirborne: 100
     RecoilAngleModifier: 0
-    DirectionMultiplier: {x: 1, y: 100}
-    RecoilStyle: 1
+    DirectionMultiplier: {x: 1, y: 1}
+    RecoilStyle: 2
     Delay: 0
     RecoilFeedback: {fileID: 0}
   ApplyRecoilOnMiss: 0

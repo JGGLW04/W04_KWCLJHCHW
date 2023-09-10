@@ -88,7 +88,18 @@ namespace Vikings
 		[Header("Damage")] 
 		/// if this is true, this character won't receive any damage while a dash is in progress
 		[Tooltip("if this is true, this character won't receive any damage while a dash is in progress")]
-		public bool InvincibleWhileDashing = false; 
+		public bool InvincibleWhileDashing = false;
+		
+		/// the possible ways to add knockback : noKnockback, which won't do nothing, set force, or add force
+		public enum KnockbackStyles { NoKnockback, SetForce, AddForce }
+		
+		[Header("Knockback")]
+		/// the type of knockback to apply when causing damage
+		[Tooltip("the type of knockback to apply when causing damage")]
+		public KnockbackStyles KnockbackType = KnockbackStyles.SetForce;
+		/// The force to apply to the object that gets damaged
+		[Tooltip("The force to apply to the object that gets damaged")]
+		public Vector2 KnockbackForce = new Vector2(10,5);
 
 		protected float _cooldownTimeStamp = 0;
 		protected float _startTime ;
@@ -101,10 +112,14 @@ namespace Vikings
 		protected IEnumerator _dashCoroutine;
 		protected CharacterDive _characterDive;
 		protected CharacterHandleWeapon _characterHandleWeapon;
+		protected CharacterJump _characterJump;
 		protected float _lastDashAt = 0f;
 		protected float _averageDistancePerFrame;
 		protected int _startFrame;
 		protected Bounds _bounds;
+		
+		public bool collideSomething = false;
+		protected Vector2 _knockbackForce;
 
 		// animation parameters
 		protected const string _dashingAnimationParameterName = "Dashing";
@@ -119,6 +134,7 @@ namespace Vikings
 			Aim.Initialization();
 			_characterDive = _character?.FindAbility<CharacterDive>();
 			_characterHandleWeapon = _character?.FindAbility<CharacterHandleWeapon>();
+			_characterJump = _character?.FindAbility<CharacterJump>();
 			SuccessiveDashesLeft = SuccessiveDashAmount;
 		}
 
@@ -296,6 +312,7 @@ namespace Vikings
 			_shouldKeepDashing = true;
 			_cooldownTimeStamp = Time.time + DashCooldown;
 			_lastDashAt = Time.time;
+			collideSomething = false;
 			if (LimitedDashes)
 			{
 				SuccessiveDashesLeft -= 1;
@@ -401,6 +418,7 @@ namespace Vikings
 					 || (_controller.State.IsCollidingBelow && _dashDirection.y < -DashDirectionMinThreshold))
 				{
 					_shouldKeepDashing = false;
+					collideSomething = true;
 					_controller.SetForce (Vector2.zero);
 				}
 				else
@@ -466,6 +484,13 @@ namespace Vikings
 				_characterHandleWeapon.ForceStop();
 				StopCoroutine(_dashCoroutine);    
 			}
+			
+			// 충돌로 인한 종료일 시 넉백 및 스턴 적용
+			if (collideSomething)
+			{
+				ApplyKnockback();
+				collideSomething = false;
+			}
 
 			// once our dash is complete, we reset our various states
 			_controller.DefaultParameters.MaximumSlopeAngle = _slopeAngleSave;
@@ -518,6 +543,35 @@ namespace Vikings
 		public override void UpdateAnimator()
 		{
 			MMAnimatorExtensions.UpdateAnimatorBool(_animator, _dashingAnimationParameter, (_movement.CurrentState == CharacterStates.MovementStates.Dashing), _character._animatorParameters, _character.PerformAnimatorSanityChecks);
+		}
+		
+		protected virtual void ApplyKnockback()
+		{
+			_knockbackForce.x = KnockbackForce.x;
+			
+			_knockbackForce.x *= _character.IsFacingRight ? -1 : 1;
+			
+			_knockbackForce.y = KnockbackForce.y;
+			
+			switch (KnockbackType)
+			{
+				case KnockbackStyles.SetForce:
+					_controller.SetForce(_knockbackForce);
+					if (_characterJump != null)
+					{
+						_characterJump.SetCanJumpStop(false);
+						_characterJump.SetJumpFlags();
+					}
+					break;
+				case KnockbackStyles.AddForce:
+					_controller.AddForce(_knockbackForce);
+					if (_characterJump != null)
+					{
+						_characterJump.SetCanJumpStop(false);
+						_characterJump.SetJumpFlags();
+					}
+					break;
+			}
 		}
 
 		/// <summary>

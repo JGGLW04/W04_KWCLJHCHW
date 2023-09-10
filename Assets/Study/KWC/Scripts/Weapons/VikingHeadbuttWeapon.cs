@@ -277,6 +277,7 @@ namespace MoreMountains.CorgiEngine
 			if (!_hitDamageableEventSent)
 			{
 				// 피해를 주었을 시 돌진 중지
+				_vikingHeadbutt.collideSomething = true;
 				_vikingHeadbutt.StopDash();
 				WeaponHitDamageable();
 				_hitDamageableEventSent = true;
