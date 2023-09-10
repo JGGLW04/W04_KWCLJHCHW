@@ -11,8 +11,8 @@ namespace MoreMountains.CorgiEngine
 	/// Animator parameters : Jumping (bool), DoubleJumping (bool), HitTheGround (bool)
 	/// </summary>
 	[MMHiddenProperties("AbilityStopFeedbacks")]
-	[AddComponentMenu("Viking/Character/Abilities/Viking Double Jump")] 
-	public class VikingDoubleJump : CharacterAbility
+	[AddComponentMenu("Viking/Character/Abilities/Advanced Viking Jump")] 
+	public class VikingAdvancedJump : CharacterAbility
 	{	
 		/// This method is only used to display a helpbox text at the beginning of the ability's inspector
 		public override string HelpBoxText() { return "This component handles jumps. Here you can define the jump height, whether the jump is proportional to the press length or not, the minimum air time (how long a character should stay in the air before being able to go down if the player has released the jump button), a jump window duration (the time during which, after falling off a cliff, a jump is still possible), jump restrictions, how many jumps the character can perform without touching the ground again, and how long collisions should be disabled when exiting 1-way platforms or moving platforms."; }
