@@ -114,7 +114,7 @@ MonoBehaviour:
     RecoilStyle: 2
     Delay: 0
     RecoilFeedback: {fileID: 0}
-  ApplyRecoilOnHitDamageable: 1
+  ApplyRecoilOnHitDamageable: 0
   RecoilOnHitDamageableProperties:
     RecoilForceGrounded: 100
     RecoilForceAirborne: 100
@@ -123,7 +123,7 @@ MonoBehaviour:
     RecoilStyle: 2
     Delay: 0
     RecoilFeedback: {fileID: 0}
-  ApplyRecoilOnHitNonDamageable: 1
+  ApplyRecoilOnHitNonDamageable: 0
   RecoilOnHitNonDamageableProperties:
     RecoilForceGrounded: 100
     RecoilForceAirborne: 100
