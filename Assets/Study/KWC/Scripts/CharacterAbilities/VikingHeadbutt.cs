@@ -463,6 +463,7 @@ namespace Vikings
 		{
 			if (_dashCoroutine != null)
 			{
+				_characterHandleWeapon.ForceStop();
 				StopCoroutine(_dashCoroutine);    
 			}
 
