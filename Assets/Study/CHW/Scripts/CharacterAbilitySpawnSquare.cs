@@ -9,7 +9,6 @@ public class CharacterAbilitySpawnSquare : CharacterAbility
     [SerializeField] GameObject Square;
     [SerializeField] Vector2 SquareOffset;
     private GameObject _spawnedSquare;
-    private bool _holdSquare;
     protected bool _spawning;
 
     [Tooltip("the speed of the character when it's walking and spaning")]
@@ -21,18 +20,17 @@ public class CharacterAbilitySpawnSquare : CharacterAbility
     protected override void Initialization()
     {
         base.Initialization();
-        _holdSquare = false;
     }
 
     protected override void HandleInput()
     {
         base.HandleInput();
-        if (_inputManager.GlideButton.State.CurrentState == MMInput.ButtonStates.ButtonDown)
+        if (_inputManager.SpawnButton.State.CurrentState == MMInput.ButtonStates.ButtonDown)
         {
             SpawnStart();
         }
 
-        if (_inputManager.GlideButton.State.CurrentState == MMInput.ButtonStates.ButtonUp && _spawning)
+        if (_inputManager.SpawnButton.State.CurrentState == MMInput.ButtonStates.ButtonUp && _spawning)
         {
             SpawnStop();
         }
@@ -59,28 +57,23 @@ public class CharacterAbilitySpawnSquare : CharacterAbility
             PlayAbilityStartFeedbacks();
             _spawning = true;
             MMCharacterEvent.Trigger(_character, MMCharacterEventTypes.SpawnSquare, MMCharacterEvent.Moments.Start);
-        }
-
-        
-        _movement.ChangeState(CharacterStates.MovementStates.SpawningSquare);
-        if (_spawning && !_holdSquare)
-        {
+            _movement.ChangeState(CharacterStates.MovementStates.SpawningSquare);
             if (_spawnedSquare != null)
             {
                 Destroy(_spawnedSquare);
             }
-            _spawnedSquare = GameObject.Instantiate(Square, this.transform.position + (Vector3)SquareOffset, new(0, 0, 0, 0));
-            _spawnedSquare.transform.parent = this.transform;
-            _holdSquare = true;
-        }
-        else
-        {
-            if (_spawnedSquare != null)
+            if (_character.IsFacingRight)
             {
-                _spawnedSquare.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-                _spawnedSquare.transform.parent = GameObject.Find("Squares").transform;
-                _holdSquare = false;
+                SquareOffset = new Vector2(Mathf.Abs(SquareOffset.x), SquareOffset.y);
             }
+            else
+            {
+                SquareOffset = new Vector2(-Mathf.Abs(SquareOffset.x), SquareOffset.y);
+            }
+            _spawnedSquare = GameObject.Instantiate(Square, this.transform.position + (Vector3)SquareOffset, new(0, 0, 0, 0));
+            //_spawnedSquare.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+            _spawnedSquare.transform.parent = GameObject.Find("Squares").transform;
+          
         }
     }
 
@@ -92,11 +85,8 @@ public class CharacterAbilitySpawnSquare : CharacterAbility
             PlayAbilityStopFeedbacks();
             MMCharacterEvent.Trigger(_character, MMCharacterEventTypes.SpawnSquare, MMCharacterEvent.Moments.End);
         }
-        if (_movement.CurrentState == CharacterStates.MovementStates.SpawningSquare && !_holdSquare)
-        {
-            _movement.ChangeState(CharacterStates.MovementStates.Idle);
-            _spawning = false;
-        }
+        _movement.ChangeState(CharacterStates.MovementStates.Idle);
+        _spawning = false;
     }
 
     public override void ProcessAbility()

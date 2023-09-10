@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 114000013273397352}
   - component: {fileID: 114000010385110490}
   m_Layer: 12
-  m_Name: RobotWeaponProjectile
+  m_Name: TurretWeaponProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 1177953632, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4956,7 +4956,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0e1495cd2b1257b419c4c5668cd82472, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

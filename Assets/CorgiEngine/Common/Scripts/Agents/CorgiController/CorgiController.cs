@@ -33,6 +33,12 @@ namespace MoreMountains.CorgiEngine
 		public CorgiControllerParameters DefaultParameters;
 		/// the current parameters
 		public CorgiControllerParameters Parameters{get{return _overrideParameters ?? DefaultParameters;}}
+		
+		[Header("Velocity")]
+		[MMInformation("Conditions that related with velocity",MoreMountains.Tools.MMInformationAttribute.InformationType.Info,false)]
+		
+		[Tooltip("Bool if the character is in max speed")]
+		public bool _isMaxSpeed = false;
         
 		[Header("Collisions")]
 		[MMInformation("You need to define what layer(s) this character will consider a walkable platform/moving platform etc. By default, you want Platforms, MovingPlatforms, OneWayPlatforms, MovingOneWayPlatforms, in this order.",MoreMountains.Tools.MMInformationAttribute.InformationType.Info,false)]
@@ -1530,6 +1536,7 @@ namespace MoreMountains.CorgiEngine
 				// we make sure the velocity doesn't exceed the MaxVelocity specified in the parameters
 				ClampSpeed();
 				ClampExternalForce();
+				CheckMaxSpeed();
 			}
 		}
 
@@ -1543,6 +1550,18 @@ namespace MoreMountains.CorgiEngine
 		{
 			_externalForce.x = Mathf.Clamp(_externalForce.x,-Parameters.MaxVelocity.x,Parameters.MaxVelocity.x);
 			_externalForce.y = Mathf.Clamp(_externalForce.y,-Parameters.MaxVelocity.y,Parameters.MaxVelocity.y);
+		}
+
+		private void CheckMaxSpeed()
+		{
+			if (_speed.x >= Parameters.MaxVelocity.x - .2f || _speed.x <= -Parameters.MaxVelocity.x + .2f)
+			{
+				_isMaxSpeed = true;
+			}
+			else
+			{
+				_isMaxSpeed = false;
+			}
 		}
 
 		/// <summary>

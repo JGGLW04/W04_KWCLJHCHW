@@ -364,7 +364,7 @@ namespace MoreMountains.CorgiEngine
                 {
                     ""name"": """",
                     ""id"": ""c74dc322-5120-478a-af7a-0d716b64cfc1"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/j"",
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -397,7 +397,7 @@ namespace MoreMountains.CorgiEngine
                 {
                     ""name"": """",
                     ""id"": ""63bf589f-5ef3-4931-bb6e-63038c725e66"",
-                    ""path"": ""<Keyboard>/leftAlt"",
+                    ""path"": ""<Keyboard>/k"",
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -661,7 +661,7 @@ namespace MoreMountains.CorgiEngine
                 {
                     ""name"": """",
                     ""id"": ""d9fae8f2-4551-45fd-a9e6-8a9b1f34964c"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/h"",
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
