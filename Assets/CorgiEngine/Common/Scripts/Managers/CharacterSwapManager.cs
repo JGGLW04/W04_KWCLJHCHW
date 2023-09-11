@@ -125,8 +125,9 @@ namespace MoreMountains.CorgiEngine
 			
 			_characterSwapList[currentIndex].ResetCharacterSwap();
 			_characterSwapList[newIndex].SwapToThisCharacter();
-
+            
 			LevelManager.Instance.Players[0] = _characterSwapList[newIndex].gameObject.GetComponentInParent<Character>();
+			//TODO: 스왑 시 적용할 메서드 목록
 			GrabInventory();
 			MMEventManager.TriggerEvent(_swapEvent);
 		}

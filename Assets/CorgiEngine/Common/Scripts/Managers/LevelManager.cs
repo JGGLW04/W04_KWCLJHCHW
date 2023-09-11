@@ -259,6 +259,8 @@ namespace MoreMountains.CorgiEngine
 			LevelGUIStart();
 			CheckpointAssignment ();
 			
+			// TODO: 초기 설정 메서드들 호출
+			
 			// 초기 인벤토리 대상 설정
 			Players[0].gameObject.GetComponent<CharacterInventory>().GrabInventories();
 
