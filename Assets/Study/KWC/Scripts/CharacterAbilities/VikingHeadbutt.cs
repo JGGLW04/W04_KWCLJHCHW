@@ -113,6 +113,7 @@ namespace Vikings
 		protected CharacterDive _characterDive;
 		protected CharacterHandleWeapon _characterHandleWeapon;
 		protected CharacterJump _characterJump;
+		protected CharacterStun _characterStun;
 		protected float _lastDashAt = 0f;
 		protected float _averageDistancePerFrame;
 		protected int _startFrame;
@@ -135,6 +136,7 @@ namespace Vikings
 			_characterDive = _character?.FindAbility<CharacterDive>();
 			_characterHandleWeapon = _character?.FindAbility<CharacterHandleWeapon>();
 			_characterJump = _character?.FindAbility<CharacterJump>();
+			_characterStun = _character?.FindAbility<CharacterStun>();
 			SuccessiveDashesLeft = SuccessiveDashAmount;
 		}
 
@@ -488,8 +490,10 @@ namespace Vikings
 			// 충돌로 인한 종료일 시 넉백 및 스턴 적용
 			if (collideSomething)
 			{
+				_movement.ChangeState(CharacterStates.MovementStates.Knockbacking);
 				ApplyKnockback();
 				collideSomething = false;
+				StartCoroutine(ApplyStunWhenGrounded());
 			}
 
 			// once our dash is complete, we reset our various states
@@ -571,6 +575,30 @@ namespace Vikings
 						_characterJump.SetJumpFlags();
 					}
 					break;
+			}
+		}
+		
+		/// <summary>
+		/// 돌진 중 충돌 시 착지할 때 스턴 적용
+		/// </summary>
+		protected IEnumerator ApplyStunWhenGrounded()
+		{
+			// 약간의 딜레이 이후 IsGrounded 체크(바로 체크 시 바로 멈춰버림)
+			yield return MMCoroutine.WaitFor(.2f);
+			
+			// 땅에 닿을 때까지 대기
+			while (_controller.State.IsGrounded == false)
+			{
+				yield return null;
+			}
+			
+			// 땅에 닿으면 스턴 적용
+			if (_controller.State.IsGrounded)
+			{
+				Debug.Log("Stunned");
+				_characterStun.StunFor(2f);
+				yield return MMCoroutine.WaitFor(2f);
+				_movement.ChangeState(CharacterStates.MovementStates.Idle);
 			}
 		}
 
