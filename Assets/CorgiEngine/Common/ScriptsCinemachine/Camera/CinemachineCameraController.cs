@@ -151,11 +151,13 @@ namespace MoreMountains.CorgiEngine
 			{
 				if (_confiner.m_ConfineMode == CinemachineConfiner.Mode.Confine2D)
 				{
-					_confiner.m_BoundingShape2D = CustomLevelManager.Instance.BoundsCollider2D;    
+					Debug.Log("1 : " + LevelManager.Instance.Players[0]);
+					_confiner.m_BoundingShape2D = LevelManager.Instance.BoundsCollider2D;    
 				}
 				else
 				{
-					_confiner.m_BoundingVolume = CustomLevelManager.Instance.BoundsCollider;    
+					Debug.Log("2 : " + LevelManager.Instance.Players[0]);
+					_confiner.m_BoundingVolume = LevelManager.Instance.BoundsCollider;    
 				}
 			}
 		}
@@ -344,6 +346,7 @@ namespace MoreMountains.CorgiEngine
 		/// <param name="corgiEngineEvent"></param>
 		public virtual void OnMMEvent(CorgiEngineEvent corgiEngineEvent)
 		{
+			Debug.Log("OMME");
 			if (corgiEngineEvent.EventType == CorgiEngineEventTypes.Respawn)
 			{
 				if (InstantRepositionCameraOnRespawn)
@@ -354,13 +357,15 @@ namespace MoreMountains.CorgiEngine
 
 			if (corgiEngineEvent.EventType == CorgiEngineEventTypes.CharacterSwitch)
 			{
-				SetTarget(CustomLevelManager.Instance.Players[0]);
+				Debug.Log("3 : " + LevelManager.Instance.Players[0]);
+				SetTarget(LevelManager.Instance.Players[0]);
 				StartFollowing();
 			}
 
 			if (corgiEngineEvent.EventType == CorgiEngineEventTypes.CharacterSwap)
 			{
-				SetTarget(CustomLevelManager.Instance.Players[0]);
+				Debug.Log("4 : " + LevelManager.Instance.Players[0]);
+				SetTarget(LevelManager.Instance.Players[0]);
 				StartFollowing();
 			}
 		}
