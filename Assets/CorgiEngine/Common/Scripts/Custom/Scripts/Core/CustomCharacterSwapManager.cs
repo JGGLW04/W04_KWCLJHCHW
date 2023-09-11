@@ -125,7 +125,7 @@ public class CustomCharacterSwapManager : CorgiMonoBehaviour, MMEventListener<Co
 		_characterSwapList[currentIndex].ResetCharacterSwap();
 		_characterSwapList[newIndex].SwapToThisCharacter();
         
-		CustomLevelManager.Instance.Players[0] = _characterSwapList[newIndex].gameObject.GetComponentInParent<Character>();
+		LevelManager.Instance.Players[0] = _characterSwapList[newIndex].gameObject.GetComponentInParent<Character>();
 		//TODO: 스왑 시 적용할 메서드 목록
 		CustomGUIManager.Instance.SetAvartarFocus(newIndex);
 		GrabInventory();
@@ -151,7 +151,7 @@ public class CustomCharacterSwapManager : CorgiMonoBehaviour, MMEventListener<Co
 
 	protected virtual void GrabInventory()
 	{
-		CustomLevelManager.Instance.Players[0].gameObject.GetComponent<CharacterInventory>().GrabInventories();
+		LevelManager.Instance.Players[0].gameObject.GetComponent<CharacterInventory>().GrabInventories();
 	}
 	
 	/// <summary>

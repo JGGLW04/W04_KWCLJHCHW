@@ -2621,7 +2621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d042072253d11428147ba0d074fa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: LevelSelection
+  LevelName: VikingLevelSelection
   Fade: 1
   Save: 1
 --- !u!114 &8206087834904707791
