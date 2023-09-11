@@ -22,7 +22,7 @@ namespace MoreMountains.CorgiEngine
 	/// <summary>
 	/// A serializable entity used to store progress : a list of scenes with their internal status (see above), how many lives are left, and how much we can have
 	/// </summary>
-	public class Progress
+	public class VikingProgress
 	{
 		public int InitialMaximumLives = 0;
 		public int InitialCurrentLives = 0;
@@ -91,7 +91,7 @@ namespace MoreMountains.CorgiEngine
 		/// </summary>
 		protected virtual void SaveProgress()
 		{
-			Progress progress = new Progress ();
+			VikingProgress progress = new VikingProgress ();
 			progress.MaximumLives = GameManager.Instance.MaximumLives;
 			progress.CurrentLives = GameManager.Instance.CurrentLives;
 			progress.InitialMaximumLives = InitialMaximumLives;
@@ -114,7 +114,7 @@ namespace MoreMountains.CorgiEngine
 		/// </summary>
 		protected virtual void LoadSavedProgress()
 		{
-			Progress progress = (Progress)MMSaveLoadManager.Load(typeof(Progress), _saveFileName, _saveFolderName);
+			VikingProgress progress = (VikingProgress)MMSaveLoadManager.Load(typeof(VikingProgress), _saveFileName, _saveFolderName);
 			if (progress != null)
 			{
 				GameManager.Instance.MaximumLives = progress.MaximumLives;

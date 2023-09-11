@@ -23576,6 +23576,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8206485917999647573, guid: 7e0e9bd750bbb074b908b1a9be9e6ce9,
+        type: 3}
+      propertyPath: LevelName
+      value: VikingLevelSelection
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e0e9bd750bbb074b908b1a9be9e6ce9, type: 3}
 --- !u!1 &1117558625
