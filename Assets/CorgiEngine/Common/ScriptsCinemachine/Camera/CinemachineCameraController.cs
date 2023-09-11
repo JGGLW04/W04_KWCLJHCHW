@@ -151,11 +151,11 @@ namespace MoreMountains.CorgiEngine
 			{
 				if (_confiner.m_ConfineMode == CinemachineConfiner.Mode.Confine2D)
 				{
-					_confiner.m_BoundingShape2D = LevelManager.Instance.BoundsCollider2D;    
+					_confiner.m_BoundingShape2D = CustomLevelManager.Instance.BoundsCollider2D;    
 				}
 				else
 				{
-					_confiner.m_BoundingVolume = LevelManager.Instance.BoundsCollider;    
+					_confiner.m_BoundingVolume = CustomLevelManager.Instance.BoundsCollider;    
 				}
 			}
 		}
@@ -354,13 +354,13 @@ namespace MoreMountains.CorgiEngine
 
 			if (corgiEngineEvent.EventType == CorgiEngineEventTypes.CharacterSwitch)
 			{
-				SetTarget(LevelManager.Instance.Players[0]);
+				SetTarget(CustomLevelManager.Instance.Players[0]);
 				StartFollowing();
 			}
 
 			if (corgiEngineEvent.EventType == CorgiEngineEventTypes.CharacterSwap)
 			{
-				SetTarget(LevelManager.Instance.Players[0]);
+				SetTarget(CustomLevelManager.Instance.Players[0]);
 				StartFollowing();
 			}
 		}
