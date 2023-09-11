@@ -8,6 +8,8 @@ TagManager:
   - Music
   - Background
   - NoMask
+  - MagicCube
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX

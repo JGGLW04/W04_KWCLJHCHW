@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TurnAround : MonoBehaviour
 {
+    [SerializeField] Vector3 Rotation;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,6 @@ public class TurnAround : MonoBehaviour
     IEnumerator Turn()
     {
         yield return new WaitForSeconds(0.2f);
-        transform.rotation = Quaternion.Euler(0f, 0f, 90f);
+        transform.rotation = Quaternion.Euler(Rotation);
     }
 }
