@@ -112,7 +112,7 @@ namespace MoreMountains.CorgiEngine
 			this.gameObject.layer = LayerMask.NameToLayer(CarryLayerMask);
 			if (_rigidbody2D != null)
 			{
-				_rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+				_rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
 				_rigidbody2D.constraints = RigidbodyConstraints2D.FreezeAll;
 			}
 			

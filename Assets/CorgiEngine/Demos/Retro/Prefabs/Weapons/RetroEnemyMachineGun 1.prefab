@@ -4757,11 +4757,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000013472678096}
-  - component: {fileID: 114000013241137692}
   - component: {fileID: 114000010078180980}
   - component: {fileID: 114191819752502978}
   m_Layer: 0
-  m_Name: RetroEnemyMachineGun
+  m_Name: RetroEnemyMachineGun 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4776,7 +4775,7 @@ Transform:
   m_GameObject: {fileID: 1000010407495960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -87.84784, y: -23.090694, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4000012629228584}
@@ -4788,35 +4787,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114000013241137692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000010407495960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0514d297deadac74fb15a7b7326ff0d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AimControl: 4
-  RotationMode: 0
-  WeaponRotationSpeed: 0
-  InstantFlip: 0
-  PreventAimWhileWeaponIsInUse: 0
-  MinimumAngle: -180
-  MaximumAngle: 180
-  IgnoreSlopeRotation: 0
-  IgnoreDownWhenGrounded: 0
-  Reticle: {fileID: 1000010525066036, guid: fdff91f9c641e4bc4ae800f161c07e1f, type: 3}
-  DisplayReticle: 0
-  ReticleDistance: 4
-  ReticleZPosition: 0
-  ReticleAtMousePosition: 0
-  RotateReticle: 1
-  ReplaceMousePointer: 1
-  DisableReticleOnDeath: 1
 --- !u!114 &114000010078180980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4834,7 +4804,7 @@ MonoBehaviour:
   InitializeOnStart: 0
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 0.2
+  TimeBetweenUses: 1
   TimeBetweenUsesReleaseInterruption: 1
   CooldownDuration: 0
   UseBurstMode: 0
@@ -4848,7 +4818,7 @@ MonoBehaviour:
   AutoDestroyWhenEmpty: 0
   AutoDestroyWhenEmptyDelay: 1
   CurrentAmmoLoaded: 0
-  WeaponAttachmentOffset: {x: 0.1, y: -0.3, z: 0}
+  WeaponAttachmentOffset: {x: 0.1, y: -0.15, z: 0}
   FlipWeaponOnCharacterFlip: 1
   FlipValue: {x: -1, y: 1, z: 1}
   LeftHandHandle: {fileID: 0}
@@ -4958,7 +4928,7 @@ MonoBehaviour:
   MutualizeWaitingPools: 0
   NestWaitingPool: 1
   NestUnderThis: 0
-  GameObjectToPool: {fileID: 100002, guid: 7f4bb7f9537ba4978b4751fc618bc3f5, type: 3}
+  GameObjectToPool: {fileID: 100002, guid: e38d8654b86ce1d46bee21e88b691929, type: 3}
   PoolSize: 20
   PoolCanExpand: 1
 --- !u!1 &1000012097833382
