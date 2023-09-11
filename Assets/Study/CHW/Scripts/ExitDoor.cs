@@ -5,7 +5,8 @@ using System.Linq;
 
 public class ExitDoor : MonoBehaviour
 {
-    [SerializeField] SpriteRenderer LightSprite;
+    [SerializeField] Sprite LightSprite;
+    [SerializeField] Sprite DefaultSprite;
     List<SpriteRenderer> _lights;
     int _count;
 
@@ -42,7 +43,7 @@ public class ExitDoor : MonoBehaviour
             {
                 if (LightSprite != null)
                 {
-                    _lights[i] = LightSprite;
+                    _lights[i].sprite = LightSprite;
                 }
                 else
                 {
@@ -54,7 +55,7 @@ public class ExitDoor : MonoBehaviour
             {
                 if (LightSprite != null)
                 {
-                    _lights[i] = LightSprite;
+                    _lights[i].sprite = DefaultSprite;
                 }
                 else
                 {

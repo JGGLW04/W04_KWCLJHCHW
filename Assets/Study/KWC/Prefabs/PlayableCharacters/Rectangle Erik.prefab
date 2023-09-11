@@ -196,9 +196,9 @@ MonoBehaviour:
   BlockingConditionStates: 
   BlockingWeaponStates: 
   NumberOfJumps: 2
-  JumpHeight: 1.125
+  JumpHeight: 2.125
   RunJump: 1
-  RunJumpHeight: 2.125
+  RunJumpHeight: 3
   JumpRestrictions: 2
   ResetCameraOffsetOnJump: 0
   CanJumpDownOneWayPlatforms: 1
