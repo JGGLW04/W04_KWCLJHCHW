@@ -9,9 +9,18 @@ public class BreakableBlock : MonoBehaviour
     public List<GameObject> BreakBlocks;
     bool _active = false;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Player") && this.GetComponent<Health>().CurrentHealth <= 0 && !_active)
+    //    {
+    //        _active = true;
+    //        StartDestructionSequence();
+    //    }
+    //}
+
+    private void FixedUpdate()
     {
-        if (collision.gameObject.CompareTag("Player") && this.GetComponent<Health>().CurrentHealth <= 0 && !_active)
+        if (this.GetComponent<Health>().CurrentHealth <= 0 && !_active)
         {
             _active = true;
             StartDestructionSequence();
@@ -29,5 +38,6 @@ public class BreakableBlock : MonoBehaviour
             Destroy(child.gameObject);
             yield return new WaitForSeconds(delayBetweenDestruction);
         }
+        Destroy(this.gameObject);
     }
 }
