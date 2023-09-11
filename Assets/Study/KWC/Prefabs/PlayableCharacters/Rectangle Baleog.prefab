@@ -292,3 +292,30 @@ MonoBehaviour:
   NewInputExtendsBuffer: 0
   MaximumBufferDuration: 0.25
   CurrentWeapon: {fileID: 0}
+--- !u!114 &5409067555915941376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4342360781542251935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61c3ded28cc4fd8b433b7f9eeb385b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  SpawnableObject: {fileID: 1867677795871075698, guid: 349da760da6c40d4a95f6d551a7208ab,
+    type: 3}
+  SpawnOffset: {x: 1, y: -0.15}
+  CoolDown: 1
+  RaycastDirection: {x: 1, y: 0, z: 0}
+  RaycastDistance: 1
+  DetectionLayerMask:
+    serializedVersion: 2
+    m_Bits: 201591040
