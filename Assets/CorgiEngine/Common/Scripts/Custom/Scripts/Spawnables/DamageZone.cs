@@ -83,6 +83,11 @@ namespace MoreMountains.CorgiEngine
 		/// <param name="collider">what's colliding with the object.</param>
 		public virtual void OnTriggerStay2D(Collider2D collider)
 		{
+			if (collider.gameObject.CompareTag("Breakable"))
+			{
+				Debug.Log("OnTriggerStay2D " + collider.gameObject.name);
+			}
+			//Debug.Log("OnTriggerStay2D " + collider.gameObject.name);
 			Colliding(collider.gameObject);
 		}
 
@@ -92,7 +97,24 @@ namespace MoreMountains.CorgiEngine
 		/// <param name="collider"></param>S
 		public virtual void OnTriggerEnter2D(Collider2D collider)
 		{
+			if (collider.gameObject.CompareTag("Breakable"))
+			{
+				Debug.Log("OnTriggerEnter2D " + collider.gameObject.name);
+			}
+			//Debug.Log("OnTriggerEnter2D " + collider.gameObject.name);
 			Colliding(collider.gameObject);
+		}
+
+		public void OnCollisionEnter2D(Collision2D other)
+		{
+			//Debug.Log("OnCollisionEnter2D " + other.gameObject.name);
+			Colliding(other.gameObject);
+		}
+		
+		public void OnCollisionStay2D(Collision2D other)
+		{
+			//Debug.Log("OnCollisionStay2D " + other.gameObject.name);
+			Colliding(other.gameObject);
 		}
 	}    
 }

@@ -346,7 +346,6 @@ namespace MoreMountains.CorgiEngine
 		/// <param name="corgiEngineEvent"></param>
 		public virtual void OnMMEvent(CorgiEngineEvent corgiEngineEvent)
 		{
-			Debug.Log("OMME");
 			if (corgiEngineEvent.EventType == CorgiEngineEventTypes.Respawn)
 			{
 				if (InstantRepositionCameraOnRespawn)
