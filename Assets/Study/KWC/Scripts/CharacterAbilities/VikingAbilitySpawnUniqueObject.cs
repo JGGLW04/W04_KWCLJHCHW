@@ -105,6 +105,9 @@ public class VikingAbilitySpawnUniqueObject : CharacterAbility
         
         if (_spawnedObject != null)
         {
+            // 연결된 오브젝트들의 _controller.DetachFromMovingPlatform(); 호출
+            _spawnedObject?.GetComponent<MagicCube>().DetachCharacters();
+            
             Destroy(_spawnedObject);
             // Carry 모드 취소
             _vikingGrabCarryAndThrow.CarriedObject = null;
