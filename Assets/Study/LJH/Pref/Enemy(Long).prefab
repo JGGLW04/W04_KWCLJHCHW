@@ -460,7 +460,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  WalkSpeed: 2
+  WalkSpeed: 1
   MovementSpeedMultiplier: 1
   AbilityMovementSpeedMultiplier: 1
   PushSpeedMultiplier: 1
@@ -556,8 +556,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2722c8e06c7fe46bbbd264ab655e2c4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShootDistance: 6
-  RaycastOriginOffset: {x: -2.5, y: 0}
+  ShootDistance: 3
+  RaycastOriginOffset: {x: 0, y: 0}
   TargetLayerMask:
     serializedVersion: 2
     m_Bits: 512
