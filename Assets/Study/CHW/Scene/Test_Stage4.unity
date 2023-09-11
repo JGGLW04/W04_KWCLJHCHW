@@ -642,6 +642,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1031803552}
     m_Modifications:
+    - target: {fileID: 1859055505621988297, guid: cce8908f74cf11048af485a6899e8cd4,
+        type: 3}
+      propertyPath: nextSceneName
+      value: Test_Stage5
+      objectReference: {fileID: 0}
     - target: {fileID: 1859055505621988302, guid: cce8908f74cf11048af485a6899e8cd4,
         type: 3}
       propertyPath: m_RootOrder
@@ -11590,6 +11595,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.y
       value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473876052842261987, guid: 1cb0b51a014053b42a4d4a90fc91bf35,
+        type: 3}
+      propertyPath: SpawnPosition.x
+      value: -0.5650711
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473876052842261987, guid: 1cb0b51a014053b42a4d4a90fc91bf35,
+        type: 3}
+      propertyPath: SpawnPosition.y
+      value: 1.2098503
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473876052842261987, guid: 1cb0b51a014053b42a4d4a90fc91bf35,
+        type: 3}
+      propertyPath: SpawnPosition.z
+      value: -1.5076542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473876052842261987, guid: 1cb0b51a014053b42a4d4a90fc91bf35,
+        type: 3}
+      propertyPath: ProjectileSpawnOffset.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6473876052842261989, guid: 1cb0b51a014053b42a4d4a90fc91bf35,
         type: 3}
