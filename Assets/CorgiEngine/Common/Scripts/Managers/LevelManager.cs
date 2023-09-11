@@ -258,6 +258,9 @@ namespace MoreMountains.CorgiEngine
 
 			LevelGUIStart();
 			CheckpointAssignment ();
+			
+			// 초기 인벤토리 대상 설정
+			Players[0].gameObject.GetComponent<CharacterInventory>().GrabInventories();
 
 			// we trigger a level start event
 			CorgiEngineEvent.Trigger(CorgiEngineEventTypes.LevelStart, Players[0]);
