@@ -9,6 +9,7 @@ public class ThreeSwitchDoor : MonoBehaviour
     public Vector3 OpenPos;
     public float Speed;
     public List<GameObject> Switches;
+    public List<bool> SwitchesState;
     public enum SwitchStates { On, Off }
     public SwitchStates CurrentSwitchState { get; set; }
     public SwitchStates InitialState = SwitchStates.Off;
@@ -18,7 +19,7 @@ public class ThreeSwitchDoor : MonoBehaviour
         CheckSwitchesState();
         if (CurrentSwitchState == SwitchStates.On)
         {
-
+            ;
         }
     }
 
@@ -27,7 +28,7 @@ public class ThreeSwitchDoor : MonoBehaviour
         CheckSwitchesState();
         if (CurrentSwitchState == SwitchStates.Off)
         {
-
+            ;
         }
     }
 
@@ -35,7 +36,7 @@ public class ThreeSwitchDoor : MonoBehaviour
     {
         for (int i = 0; i < Switches.Count; i++)
         {
-            if (!(Switches[i].GetComponent<Switch>().Active))
+            if (Switches[i].GetComponent<Switch>().Active != SwitchesState[i])
             {
                 CurrentSwitchState = SwitchStates.Off;
                 return;
@@ -46,14 +47,14 @@ public class ThreeSwitchDoor : MonoBehaviour
 
     public void MoveDoorToClosePos ()
     {
-        if (CurrentSwitchState == SwitchStates.Off && this.transform.position.y > ClosePos.y)
+        if (this.transform.position.y > ClosePos.y)
         {
             transform.Translate(new Vector2(0, -Speed * Time.deltaTime), Space.World);
         }
     }
     public void MoveDoorToOpenPos()
     {
-        if (CurrentSwitchState == SwitchStates.On && this.transform.position.y < OpenPos.y)
+        if (this.transform.position.y < OpenPos.y)
         {
             transform.Translate(new Vector2(0, Speed * Time.deltaTime), Space.World);
         }
@@ -61,6 +62,14 @@ public class ThreeSwitchDoor : MonoBehaviour
 
     protected virtual void FixedUpdate()
     {
-        if ()
+        CheckSwitchesState();
+        if (CurrentSwitchState == SwitchStates.Off)
+        {
+            MoveDoorToClosePos();
+        }
+        else if (CurrentSwitchState == SwitchStates.On)
+        {
+            MoveDoorToOpenPos();
+        }
     }
 }
