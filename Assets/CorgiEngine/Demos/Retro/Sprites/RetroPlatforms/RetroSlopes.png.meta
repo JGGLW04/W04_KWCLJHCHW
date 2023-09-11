@@ -392,6 +392,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: RetroSlopes_7
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 94
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7b13ffc80f678468f04d470b2f76aa
+      internalID: 369122088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RetroSlopes_8
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 94
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54161c98ca22ca4d99865996740c7e2
+      internalID: -1435989031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -410,6 +452,8 @@ TextureImporter:
       RetroSlopes_4: -7066852294753162678
       RetroSlopes_5: 6762081088129619756
       RetroSlopes_6: 2944724365027044775
+      RetroSlopes_7: 369122088
+      RetroSlopes_8: -1435989031
       RetroSlopes_Stairs1: 8775362804130994755
       RetroSlopes_Stairs2: -3534590948411469785
   spritePackingTag: 
