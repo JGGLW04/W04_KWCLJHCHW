@@ -45,18 +45,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scenes:
+  - SceneName: Test_Stage1
+    LevelComplete: 0
+    LevelUnlocked: 1
+  - SceneName: Test_Stage2
+    LevelComplete: 0
+    LevelUnlocked: 1
   - SceneName: Test_Stage3
-    LevelComplete: 1
+    LevelComplete: 0
     LevelUnlocked: 1
   - SceneName: Test_Stage4
     LevelComplete: 0
     LevelUnlocked: 1
   - SceneName: Test_Stage5
     LevelComplete: 0
-    LevelUnlocked: 1
+    LevelUnlocked: 0
   - SceneName: Test_Stage6
     LevelComplete: 0
-    LevelUnlocked: 1
+    LevelUnlocked: 0
   - SceneName: Stage2-1
     LevelComplete: 0
     LevelUnlocked: 1
