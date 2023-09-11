@@ -152,7 +152,7 @@ namespace MoreMountains.CorgiEngine
 		/// <summary>
 		/// Grabs references to all inventories
 		/// </summary>
-		protected virtual void GrabInventories()
+		public virtual void GrabInventories()
 		{
 			if (MainInventory == null)
 			{

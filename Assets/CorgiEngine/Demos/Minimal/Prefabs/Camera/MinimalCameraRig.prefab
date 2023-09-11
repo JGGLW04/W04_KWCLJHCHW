@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -74.293304, y: 8.877897, z: -2.0703125}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8040196612442320774}
   - {fileID: 8040196612289779000}
@@ -61,6 +62,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 71.51215, y: 2.2256317, z: -0.3732071}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8040196612289779000}
   m_RootOrder: 0
@@ -149,6 +151,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.7811508, y: -11.103529, z: -15.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8040196612220764987}
   m_Father: {fileID: 1844467417376146404}
@@ -183,7 +186,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -271,6 +274,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.7811508, y: -11.103529, z: -15.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1844467417376146404}
   m_RootOrder: 0
@@ -473,6 +477,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -30.526154, y: 5.1687946, z: 2.0703125}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1844467417376146404}
   m_RootOrder: 2
@@ -506,10 +511,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04189ce672fd8c349b61eb900b1dc0ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChannelMode: 0
   Channel: 0
+  MMChannelDefinition: {fileID: 0}
   ShakeDuration: 0.2
   PlayOnAwake: 0
+  PermanentShake: 0
   Interruptible: 1
+  AlwaysResetTargetValuesAfterShake: 0
+  OnlyUseShakerValues: 0
+  CooldownBetweenShakes: 0
   Shaking: 0
   ForwardDirection: 1
   TimescaleMode: 0
@@ -596,10 +607,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1297b688774526f418895a2f09176619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChannelMode: 0
   Channel: 0
+  MMChannelDefinition: {fileID: 0}
   ShakeDuration: 0.2
   PlayOnAwake: 0
+  PermanentShake: 0
   Interruptible: 1
+  AlwaysResetTargetValuesAfterShake: 0
+  OnlyUseShakerValues: 0
+  CooldownBetweenShakes: 0
   Shaking: 0
   ForwardDirection: 1
   TimescaleMode: 0
@@ -651,10 +668,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 416f266b197306a49975dadec6e05526, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChannelMode: 0
   Channel: 0
+  MMChannelDefinition: {fileID: 0}
   ShakeDuration: 1
   PlayOnAwake: 0
+  PermanentShake: 0
   Interruptible: 1
+  AlwaysResetTargetValuesAfterShake: 0
+  OnlyUseShakerValues: 0
+  CooldownBetweenShakes: 0
   Shaking: 0
   ForwardDirection: 1
   TimescaleMode: 0
@@ -811,10 +834,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7efc6a4a233d87b4fbc72cda82ca4a31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChannelMode: 0
   Channel: 0
+  MMChannelDefinition: {fileID: 0}
   ShakeDuration: 0.8
   PlayOnAwake: 0
+  PermanentShake: 0
   Interruptible: 1
+  AlwaysResetTargetValuesAfterShake: 0
+  OnlyUseShakerValues: 0
+  CooldownBetweenShakes: 0
   Shaking: 0
   ForwardDirection: 1
   TimescaleMode: 0
@@ -929,10 +958,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81cf12de3b3c98d489779a3382046725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChannelMode: 0
   Channel: 0
+  MMChannelDefinition: {fileID: 0}
   ShakeDuration: 0.2
   PlayOnAwake: 0
+  PermanentShake: 0
   Interruptible: 1
+  AlwaysResetTargetValuesAfterShake: 0
+  OnlyUseShakerValues: 0
+  CooldownBetweenShakes: 0
   Shaking: 0
   ForwardDirection: 1
   TimescaleMode: 0
@@ -972,3 +1007,49 @@ MonoBehaviour:
     m_RotationOrder: 4
   RemapIntensityZero: 0
   RemapIntensityOne: 0.1
+  InterpolateColor: 0
+  ColorCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.05
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.95
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  RemapColorZero: 0
+  RemapColorOne: 1
+  TargetColor: {r: 1, g: 0, b: 0, a: 1}
