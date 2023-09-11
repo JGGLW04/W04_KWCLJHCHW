@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class FallingBlock : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+	public float PositionY;
+	public float Speed;
+	bool _activate = false;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("PlayerBullet"))
+        {
+			_activate = true;
+		}
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	protected virtual void FixedUpdate()
+	{
+		if (_activate == true && this.transform.position.y > PositionY)
+        {
+			transform.Translate(new Vector2(0, -Speed * Time.deltaTime), Space.World);
+        }
+	}
 }

@@ -34,6 +34,7 @@ namespace MoreMountains.CorgiEngine
 			Crouching,
 			Crawling, 
 			Dashing,
+			Knockbacking,
 			LookingUp,
 			WallClinging,
 			Jetpacking,

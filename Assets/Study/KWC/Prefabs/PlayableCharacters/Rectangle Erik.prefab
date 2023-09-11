@@ -253,5 +253,5 @@ MonoBehaviour:
   SuccessiveDashResetDuration: 2
   InvincibleWhileDashing: 0
   KnockbackType: 1
-  KnockbackForce: {x: 6, y: 6}
+  KnockbackForce: {x: 3, y: 6}
   collideSomething: 0
