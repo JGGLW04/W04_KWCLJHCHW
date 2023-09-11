@@ -8,6 +8,7 @@ TagManager:
   - Music
   - Background
   - NoMask
+  - MagicCube
   layers:
   - Default
   - TransparentFX

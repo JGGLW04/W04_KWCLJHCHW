@@ -14,8 +14,8 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0, g: 0, b: 0, a: 0}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
@@ -1504,6 +1504,63 @@ Transform:
   m_Father: {fileID: 44799380}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &520341320
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 151974, guid: 23cf8cba87675344b8656559ed814e3f, type: 3}
+      propertyPath: m_Name
+      value: JumperToNormal
+      objectReference: {fileID: 0}
+    - target: {fileID: 474250, guid: 23cf8cba87675344b8656559ed814e3f, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 474250, guid: 23cf8cba87675344b8656559ed814e3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -61.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 474250, guid: 23cf8cba87675344b8656559ed814e3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 474250, guid: 23cf8cba87675344b8656559ed814e3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 474250, guid: 23cf8cba87675344b8656559ed814e3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 474250, guid: 23cf8cba87675344b8656559ed814e3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 474250, guid: 23cf8cba87675344b8656559ed814e3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 474250, guid: 23cf8cba87675344b8656559ed814e3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 474250, guid: 23cf8cba87675344b8656559ed814e3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 474250, guid: 23cf8cba87675344b8656559ed814e3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 474250, guid: 23cf8cba87675344b8656559ed814e3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 45
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 23cf8cba87675344b8656559ed814e3f, type: 3}
 --- !u!1001 &578529037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7270,6 +7327,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7088912045573092815, guid: d08b9ff591fdd49479d9bc80109447d5,
+        type: 3}
+      propertyPath: ThrowForce
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: -4392709508709004464, guid: d08b9ff591fdd49479d9bc80109447d5,
         type: 3}
       propertyPath: Square
