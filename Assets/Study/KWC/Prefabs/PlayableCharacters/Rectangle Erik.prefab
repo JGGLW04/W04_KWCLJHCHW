@@ -108,11 +108,6 @@ PrefabInstance:
       propertyPath: InstantAcceleration
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2593362504467930627, guid: c2798a1dd0f89e941be6a5bcc0590baa,
-        type: 3}
-      propertyPath: LadderClimbingSpeed
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 2593362504467957209, guid: c2798a1dd0f89e941be6a5bcc0590baa,
         type: 3}
       propertyPath: DefaultParameters.MaxVelocity.x
@@ -253,5 +248,5 @@ MonoBehaviour:
   SuccessiveDashResetDuration: 2
   InvincibleWhileDashing: 0
   KnockbackType: 1
-  KnockbackForce: {x: 6, y: 6}
+  KnockbackForce: {x: 3, y: 6}
   collideSomething: 0

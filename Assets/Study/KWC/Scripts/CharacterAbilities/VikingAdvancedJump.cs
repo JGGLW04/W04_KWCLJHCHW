@@ -141,6 +141,11 @@ namespace MoreMountains.CorgiEngine
 					return false;
 				}
 
+				if (_movement.CurrentState == CharacterStates.MovementStates.Knockbacking)
+				{
+					return false;
+				}
+
 				if ( (JumpRestrictions == JumpBehavior.CanJumpAnywhere) ||  (JumpRestrictions == JumpBehavior.CanJumpAnywhereAnyNumberOfTimes) )
 				{
 					return true;

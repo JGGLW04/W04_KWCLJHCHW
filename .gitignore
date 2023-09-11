@@ -80,3 +80,4 @@ crashlytics-build.properties
 # Corgi Engine
 /[Aa]ssets/MMData.meta
 /[Aa]ssets/[Mm]MData/
+/[Aa]ssets/[Mm]MData/[Mm]MAchievements/
