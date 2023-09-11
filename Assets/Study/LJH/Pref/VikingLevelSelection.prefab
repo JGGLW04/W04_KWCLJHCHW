@@ -59,10 +59,10 @@ MonoBehaviour:
     LevelUnlocked: 1
   - SceneName: Test_Stage5
     LevelComplete: 0
-    LevelUnlocked: 0
+    LevelUnlocked: 1
   - SceneName: Test_Stage6
     LevelComplete: 0
-    LevelUnlocked: 0
+    LevelUnlocked: 1
   - SceneName: Stage2-1
     LevelComplete: 0
     LevelUnlocked: 1
