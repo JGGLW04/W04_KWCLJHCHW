@@ -9,6 +9,7 @@ TagManager:
   - Background
   - NoMask
   - MagicCube
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX

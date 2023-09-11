@@ -4,28 +4,22 @@ using UnityEngine;
 
 public class FallingBlock : MonoBehaviour
 {
-    [SerializeField] int _hp = 3;
-    [SerializeField] 
+	public float PositionY;
+	public float Speed;
+	bool _activate = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("PlayerBullet"))
+        {
+			_activate = true;
+		}
     }
 
 	protected virtual void FixedUpdate()
 	{
-		// we send our various states to the animator.		
-		//UpdateAnimator();
-
-		//if (_timer < 0)
-		//{
-		//	_newPosition = new Vector2(0, -FallSpeed * Time.deltaTime);
-
-		//	transform.Translate(_newPosition, Space.World);
-
-		//	if (transform.position.y < _bounds.min.y)
-		//	{
-		//		DisableFallingPlatform();
-		//	}
-		//}
+		if (_activate == true && this.transform.position.y > PositionY)
+        {
+			transform.Translate(new Vector2(0, -Speed * Time.deltaTime), Space.World);
+        }
 	}
 }
