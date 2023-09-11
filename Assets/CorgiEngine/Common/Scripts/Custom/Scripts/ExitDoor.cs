@@ -22,15 +22,14 @@ public class ExitDoor : MonoBehaviour
     //        .Where(image => image.name.EndsWith("Background", System.StringComparison.OrdinalIgnoreCase)).ToList();
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(_count >= 6)
-        {
-            GoToLevel();
-        }
-
         if (collision.CompareTag("Player"))
-        {
+        {           
             _count++;
             SetLights();
+        }
+        if (_count >= 6)
+        {
+            GoToLevel();
         }
     }
 

@@ -60,7 +60,7 @@ namespace MoreMountains.CorgiEngine
 		protected override void Awake()
 		{
 			base.Awake ();
-			LoadSavedProgress ();
+			//LoadSavedProgress ();
 		}
 
 		/// <summary>
@@ -81,7 +81,7 @@ namespace MoreMountains.CorgiEngine
 				}
 			}
 		}
-
+		/*
 		/// <summary>
 		/// Goes through all the scenes in our progress list, and updates the collected stars counter
 		/// </summary>
@@ -108,7 +108,7 @@ namespace MoreMountains.CorgiEngine
 		{
 			SaveProgress();
 		}
-
+		
 		/// <summary>
 		/// Loads the saved progress into memory
 		/// </summary>
@@ -129,7 +129,7 @@ namespace MoreMountains.CorgiEngine
 				InitialCurrentLives = GameManager.Instance.CurrentLives;
 			}
 		}
-
+		*/
 		/// <summary>
 		/// When we grab a star event, we update our scene status accordingly
 		/// </summary>
@@ -145,7 +145,7 @@ namespace MoreMountains.CorgiEngine
 			{
 				case CorgiEngineEventTypes.LevelComplete:
 					LevelComplete ();
-					SaveProgress ();
+					//SaveProgress ();
 					break;
 				case CorgiEngineEventTypes.GameOver:
 					GameOver ();
