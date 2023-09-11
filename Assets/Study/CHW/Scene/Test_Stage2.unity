@@ -6257,7 +6257,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "?\uD0A4\uB97C \uB20C\uB7EC\n\uC810\uD504\uAC00 \uAC00\uB2A5\uD569\uB2C8\uB2E4"
+  m_Text: "?\uD0A4\uB97C \uB20C\uB7EC\n\uD050\uBE0C \uC0DD\uC131\n?\uD0A4\uB97C \uC7AC\uC785\uB825\uC2DC
+    \uD050\uBE0C\uB193\uAE30\n?\uD0A4 \uC785\uB825\uC2DC \uADF8\uB7A9\n"
 --- !u!222 &1179455427
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6303,7 +6304,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -50.22, y: 35.41}
+  m_AnchoredPosition: {x: -50.66, y: 35.41}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1262806136
@@ -6673,7 +6674,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "?\uD0A4\uB97C \uB20C\uB7EC\n\uC810\uD504\uAC00 \uAC00\uB2A5\uD569\uB2C8\uB2E4"
+  m_Text: "?\uD0A4\uB97C \uB20C\uB7EC\n\uC288\uD305\uC774 \uAC00\uB2A5\uD569\uB2C8\uB2E4"
 --- !u!222 &1686154413
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6764,7 +6765,7 @@ GameObject:
   - component: {fileID: 1709115129}
   - component: {fileID: 1709115128}
   m_Layer: 5
-  m_Name: ShootTutod
+  m_Name: ShootTuto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
