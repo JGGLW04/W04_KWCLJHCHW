@@ -11,6 +11,7 @@ public class Switch : MonoBehaviour
         if (collision.CompareTag("Player") || collision.CompareTag("MagicCube"))
         {
             Active = true;
+            this.transform.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
         }
     }
 
@@ -19,6 +20,7 @@ public class Switch : MonoBehaviour
         if (collision.CompareTag("Player") || collision.CompareTag("MagicCube"))
         {
             Active = false;
+            this.transform.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
         }
     }
 }

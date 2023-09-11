@@ -14,6 +14,12 @@ public class ThreeSwitchDoor : MonoBehaviour
     public SwitchStates CurrentSwitchState { get; set; }
     public SwitchStates InitialState = SwitchStates.Off;
 
+
+    private void Start()
+    {
+        ClosePos = this.transform.position;
+        OpenPos = this.transform.position + OpenPos;
+    }
     public void ActiveDoor()
     {
         CheckSwitchesState();
@@ -49,14 +55,14 @@ public class ThreeSwitchDoor : MonoBehaviour
     {
         if (this.transform.position.y > ClosePos.y)
         {
-            transform.Translate(new Vector2(0, -Speed * Time.deltaTime), Space.World);
+            transform.Translate(new Vector2(0, -Speed * Time.deltaTime), Space.Self);
         }
     }
     public void MoveDoorToOpenPos()
     {
         if (this.transform.position.y < OpenPos.y)
         {
-            transform.Translate(new Vector2(0, Speed * Time.deltaTime), Space.World);
+            transform.Translate(new Vector2(0, Speed * Time.deltaTime), Space.Self);
         }
     }
 
