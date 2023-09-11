@@ -840,7 +840,7 @@ GameObject:
   - component: {fileID: 586770389}
   - component: {fileID: 586770388}
   - component: {fileID: 586770387}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: RetroVerticalDoor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1040,7 +1040,7 @@ GameObject:
   - component: {fileID: 669294476}
   - component: {fileID: 669294475}
   - component: {fileID: 669294474}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: RetroVerticalDoor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13142,7 +13142,7 @@ GameObject:
   - component: {fileID: 1564669424}
   - component: {fileID: 1564669423}
   - component: {fileID: 1564669422}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: RetroVerticalDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14171,7 +14171,7 @@ GameObject:
   - component: {fileID: 2013879836}
   - component: {fileID: 2013879835}
   - component: {fileID: 2013879834}
-  m_Layer: 18
+  m_Layer: 8
   m_Name: minimalRedDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
