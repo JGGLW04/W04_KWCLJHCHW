@@ -38,6 +38,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 397814463385147805, guid: a030eef7f43754545ba77af9a624ae5f,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 397814463385147805, guid: a030eef7f43754545ba77af9a624ae5f,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 3782454711289799154, guid: a030eef7f43754545ba77af9a624ae5f,
         type: 3}
       propertyPath: NumberOfJumps
