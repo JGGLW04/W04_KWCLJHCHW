@@ -61,8 +61,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5263875610244528304}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalPosition: {x: 0, y: 1.95, z: 0}
+  m_LocalScale: {x: 1, y: 6.175, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5263875610015807324}
@@ -137,10 +137,10 @@ MonoBehaviour:
   OpenPos: {x: 0, y: 5, z: 0}
   Speed: 5
   Switches:
-  - {fileID: 7140086274759660401}
-  - {fileID: 7140086275222774391}
   - {fileID: 7140086276269257420}
-  SwitchesState: 010001
+  - {fileID: 7140086275222774391}
+  - {fileID: 7140086274759660401}
+  SwitchesState: 010100
   InitialState: 1
 --- !u!1001 &5263875609030582216
 PrefabInstance:
@@ -172,7 +172,7 @@ PrefabInstance:
     - target: {fileID: 5223129220498573177, guid: 625ec7fc2c396914dba02d2212f1db02,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.752
+      value: -0.77
       objectReference: {fileID: 0}
     - target: {fileID: 5223129220498573177, guid: 625ec7fc2c396914dba02d2212f1db02,
         type: 3}
@@ -297,7 +297,7 @@ PrefabInstance:
     - target: {fileID: 5223129220498573177, guid: 625ec7fc2c396914dba02d2212f1db02,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.752
+      value: -0.77
       objectReference: {fileID: 0}
     - target: {fileID: 5223129220498573177, guid: 625ec7fc2c396914dba02d2212f1db02,
         type: 3}
@@ -417,12 +417,12 @@ PrefabInstance:
     - target: {fileID: 5223129220498573177, guid: 625ec7fc2c396914dba02d2212f1db02,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.7999954
+      value: -2.76
       objectReference: {fileID: 0}
     - target: {fileID: 5223129220498573177, guid: 625ec7fc2c396914dba02d2212f1db02,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.752
+      value: -0.77
       objectReference: {fileID: 0}
     - target: {fileID: 5223129220498573177, guid: 625ec7fc2c396914dba02d2212f1db02,
         type: 3}
