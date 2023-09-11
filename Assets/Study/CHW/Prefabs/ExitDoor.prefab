@@ -128,7 +128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: decf03ba527466b43bd6c69fa2c1cad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LightSprite: {fileID: 0}
+  LightSprite: {fileID: 21300012, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+  DefaultSprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b,
+    type: 3}
 --- !u!1001 &1588605416323928959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -144,12 +146,12 @@ PrefabInstance:
     - target: {fileID: 2519370088651242094, guid: 28721a325b0718f4c817b636a23170e3,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2519370088651242094, guid: 28721a325b0718f4c817b636a23170e3,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.05
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 2519370088651242094, guid: 28721a325b0718f4c817b636a23170e3,
         type: 3}
@@ -206,6 +208,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light1
       objectReference: {fileID: 0}
+    - target: {fileID: 8187342516466608445, guid: 28721a325b0718f4c817b636a23170e3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28721a325b0718f4c817b636a23170e3, type: 3}
 --- !u!4 &3818284521576655121 stripped
@@ -229,12 +237,12 @@ PrefabInstance:
     - target: {fileID: 2519370088651242094, guid: 28721a325b0718f4c817b636a23170e3,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2519370088651242094, guid: 28721a325b0718f4c817b636a23170e3,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.05
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 2519370088651242094, guid: 28721a325b0718f4c817b636a23170e3,
         type: 3}
@@ -291,6 +299,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light2
       objectReference: {fileID: 0}
+    - target: {fileID: 8187342516466608445, guid: 28721a325b0718f4c817b636a23170e3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28721a325b0718f4c817b636a23170e3, type: 3}
 --- !u!4 &4267768259585488273 stripped
@@ -314,12 +328,12 @@ PrefabInstance:
     - target: {fileID: 2519370088651242094, guid: 28721a325b0718f4c817b636a23170e3,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2519370088651242094, guid: 28721a325b0718f4c817b636a23170e3,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.05
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 2519370088651242094, guid: 28721a325b0718f4c817b636a23170e3,
         type: 3}
@@ -376,6 +390,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light3
       objectReference: {fileID: 0}
+    - target: {fileID: 8187342516466608445, guid: 28721a325b0718f4c817b636a23170e3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28721a325b0718f4c817b636a23170e3, type: 3}
 --- !u!4 &4267768259342844576 stripped
