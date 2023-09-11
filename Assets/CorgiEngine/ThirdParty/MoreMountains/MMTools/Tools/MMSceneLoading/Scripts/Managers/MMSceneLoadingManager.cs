@@ -134,7 +134,7 @@ namespace MoreMountains.Tools
 			yield return new WaitForSeconds(StartFadeDuration);
             
 			// we start loading the scene
-			_asyncOperation = SceneManager.LoadSceneAsync(_sceneToLoad,LoadSceneMode.Single );
+			_asyncOperation = SceneManager.LoadSceneAsync(_sceneToLoad,LoadSceneMode.Single);
 			_asyncOperation.allowSceneActivation = false;
 
 			// while the scene loads, we assign its progress to a target that we'll use to fill the progress bar smoothly
