@@ -3087,6 +3087,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 130557723676124664, guid: e0d2e26caefcc68458dfb9df597ce5a7,
         type: 3}
+      propertyPath: UseVisualPrompt
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 130557723676124664, guid: e0d2e26caefcc68458dfb9df597ce5a7,
+        type: 3}
       propertyPath: OnExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1571268258}
