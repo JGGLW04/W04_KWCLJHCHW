@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using MoreMountains.CorgiEngine;
+using UnityEngine.SceneManagement;
+using MoreMountains.Tools;
 
 public class ExitDoor : MonoBehaviour
 {
@@ -9,7 +12,7 @@ public class ExitDoor : MonoBehaviour
     [SerializeField] Sprite DefaultSprite;
     List<SpriteRenderer> _lights;
     int _count;
-
+    [SerializeField] string nextSceneName;
     private void Start()
     {
         _count = 0;
@@ -19,6 +22,11 @@ public class ExitDoor : MonoBehaviour
     //        .Where(image => image.name.EndsWith("Background", System.StringComparison.OrdinalIgnoreCase)).ToList();
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(_count >= 6)
+        {
+            GoToLevel();
+        }
+
         if (collision.CompareTag("Player"))
         {
             _count++;
@@ -63,5 +71,9 @@ public class ExitDoor : MonoBehaviour
                 }
             }
         }
+    }
+    public virtual void GoToLevel()
+    {
+        MMSceneLoadingManager.LoadScene(nextSceneName);
     }
 }
