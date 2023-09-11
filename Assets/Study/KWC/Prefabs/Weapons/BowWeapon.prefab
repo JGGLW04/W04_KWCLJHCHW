@@ -49,9 +49,9 @@ MonoBehaviour:
   Interruptable: 1
   InitializeOnStart: 0
   DelayBeforeUse: 0.3
-  DelayBeforeUseReleaseInterruption: 0
+  DelayBeforeUseReleaseInterruption: 1
   TimeBetweenUses: 1
-  TimeBetweenUsesReleaseInterruption: 0
+  TimeBetweenUsesReleaseInterruption: 1
   CooldownDuration: 0
   UseBurstMode: 0
   BurstLength: 3
@@ -158,7 +158,7 @@ MonoBehaviour:
   RotateWeaponOnSpread: 0
   RandomSpread: 0
   ObjectPooler: {fileID: 0}
-  SpawnPosition: {x: 0.5, y: 0, z: 0}
+  SpawnPosition: {x: -13.545941, y: -2.6107256, z: -0.063926354}
 --- !u!114 &1242456777117781266
 MonoBehaviour:
   m_ObjectHideFlags: 0

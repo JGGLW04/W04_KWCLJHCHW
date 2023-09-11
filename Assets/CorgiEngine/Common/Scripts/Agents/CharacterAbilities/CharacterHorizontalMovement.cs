@@ -232,6 +232,12 @@ namespace MoreMountains.CorgiEngine
 				return;
 			}
 
+			/// 넉백 중이면 움직이지 않음
+			if (_movement.CurrentState == CharacterStates.MovementStates.Knockbacking)
+			{
+				return;
+			}
+
 			// if we're grounded and moving, and currently Idle, Dangling or Falling, we become Walking
 			if ( (_controller.State.IsGrounded)
 			     && (_normalizedHorizontalSpeed != 0)
