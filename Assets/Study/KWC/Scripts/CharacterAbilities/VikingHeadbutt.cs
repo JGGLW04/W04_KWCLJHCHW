@@ -490,9 +490,9 @@ namespace Vikings
 			// 충돌로 인한 종료일 시 넉백 및 스턴 적용
 			if (collideSomething)
 			{
+				_movement.ChangeState(CharacterStates.MovementStates.Knockbacking);
 				ApplyKnockback();
 				collideSomething = false;
-				
 				StartCoroutine(ApplyStunWhenGrounded());
 			}
 
@@ -597,6 +597,8 @@ namespace Vikings
 			{
 				Debug.Log("Stunned");
 				_characterStun.StunFor(2f);
+				yield return MMCoroutine.WaitFor(2f);
+				_movement.ChangeState(CharacterStates.MovementStates.Idle);
 			}
 		}
 
