@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using MoreMountains.Tools;
 using System.Collections.Generic;
 #if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
@@ -124,8 +125,10 @@ namespace MoreMountains.CorgiEngine
 			
 			_characterSwapList[currentIndex].ResetCharacterSwap();
 			_characterSwapList[newIndex].SwapToThisCharacter();
-
+            
 			LevelManager.Instance.Players[0] = _characterSwapList[newIndex].gameObject.GetComponentInParent<Character>();
+			//TODO: 스왑 시 적용할 메서드 목록
+			GrabInventory();
 			MMEventManager.TriggerEvent(_swapEvent);
 		}
 
@@ -144,6 +147,11 @@ namespace MoreMountains.CorgiEngine
 				}
 			}
 			return currentIndex;
+		}
+
+		protected virtual void GrabInventory()
+		{
+			LevelManager.Instance.Players[0].gameObject.GetComponent<CharacterInventory>().GrabInventories();
 		}
 		
 		/// <summary>
