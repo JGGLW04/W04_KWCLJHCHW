@@ -55,7 +55,7 @@ public class VikingAbilitySpawnMine : CharacterAbility
 
     protected override void HandleInput()
     {
-        if (_inputManager.SpawnButton.State.CurrentState == MMInput.ButtonStates.ButtonDown && (Time.time - _lastSpawnTimestamp) > CoolDown)
+        if (_inputManager.BombButton.State.CurrentState == MMInput.ButtonStates.ButtonDown && (Time.time - _lastSpawnTimestamp) > CoolDown)
         {
             SpawnAttempt();
         }
