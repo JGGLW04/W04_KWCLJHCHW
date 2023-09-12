@@ -201,7 +201,7 @@ namespace MoreMountains.CorgiEngine
 
 				if (inputConditionsMet
 				    && (_movement.CurrentState != CharacterStates.MovementStates.LadderClimbing) // and we're not climbing a ladder already
-				    && (_movement.CurrentState != CharacterStates.MovementStates.Gliding) // and we're not gliding
+				    /*&& (_movement.CurrentState != CharacterStates.MovementStates.Gliding) // and we're not gliding*/
 				    && (_movement.CurrentState != CharacterStates.MovementStates.Jetpacking)
 				    && (Time.time - _lastJumpFromLadderAt >= MinimumTimeAfterLadderJump)) // and we're not jetpacking
 				{			
