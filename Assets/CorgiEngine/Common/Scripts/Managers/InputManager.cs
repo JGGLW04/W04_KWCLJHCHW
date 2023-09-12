@@ -93,6 +93,7 @@ namespace MoreMountains.CorgiEngine
 		public Vector2 Threshold = new Vector2(0.1f, 0.4f);
 
 		public MMInput.IMButton SpawnButton { get; protected set; }
+		public MMInput.IMButton BombButton { get; protected set; }
 
 		/// the jump button, used for jumps
 		public MMInput.IMButton JumpButton { get; protected set; }
@@ -231,6 +232,7 @@ namespace MoreMountains.CorgiEngine
 			ButtonList.Add(GrabButton = new MMInput.IMButton(PlayerID, "Grab", GrabButtonDown, GrabButtonPressed, GrabButtonUp));
 			ButtonList.Add(ThrowButton = new MMInput.IMButton(PlayerID, "Throw", ThrowButtonDown, ThrowButtonPressed, ThrowButtonUp));
 			ButtonList.Add(SpawnButton = new MMInput.IMButton(PlayerID, "Spawn", SpawnButtonDown, SpawnButtonPressed, SpawnButtonUp));
+			ButtonList.Add(BombButton = new MMInput.IMButton(PlayerID, "Bomb", BombButtonDown, BombButtonPressed, BombButtonUp));
 		}
 
 		/// <summary>
@@ -511,6 +513,10 @@ namespace MoreMountains.CorgiEngine
 		public virtual void SpawnButtonDown()				{ SpawnButton.State.ChangeState(MMInput.ButtonStates.ButtonDown); }
 		public virtual void SpawnButtonPressed()			{ SpawnButton.State.ChangeState(MMInput.ButtonStates.ButtonPressed); }
 		public virtual void SpawnButtonUp()					{ SpawnButton.State.ChangeState(MMInput.ButtonStates.ButtonUp); }
+		
+		public virtual void BombButtonDown()				{ BombButton.State.ChangeState(MMInput.ButtonStates.ButtonDown); }
+		public virtual void BombButtonPressed()			{ BombButton.State.ChangeState(MMInput.ButtonStates.ButtonPressed); }
+		public virtual void BombButtonUp()					{ BombButton.State.ChangeState(MMInput.ButtonStates.ButtonUp); }
 
 		public virtual void InteractButtonDown()	        { InteractButton.State.ChangeState (MMInput.ButtonStates.ButtonDown); }
 		public virtual void InteractButtonPressed()	        { InteractButton.State.ChangeState (MMInput.ButtonStates.ButtonPressed); }
