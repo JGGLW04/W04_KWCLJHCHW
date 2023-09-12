@@ -4807,7 +4807,7 @@ PrefabInstance:
     - target: {fileID: -158209014163932632, guid: a985298b47e1a924aa071f6a2ac4940f,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 955493386977602497, guid: a985298b47e1a924aa071f6a2ac4940f,
         type: 3}
@@ -5215,7 +5215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754c4f09347cebe428a0a71c3e85824f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutorial: {fileID: 402180075}
+  tutorial: {fileID: 1262806134}
 --- !u!212 &545460568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7619,7 +7619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754c4f09347cebe428a0a71c3e85824f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutorial: {fileID: 402180075}
+  tutorial: {fileID: 1709115126}
 --- !u!212 &2071197241
 SpriteRenderer:
   m_ObjectHideFlags: 0

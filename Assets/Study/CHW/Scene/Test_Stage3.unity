@@ -1083,7 +1083,7 @@ PrefabInstance:
     - target: {fileID: -158209014163932632, guid: a985298b47e1a924aa071f6a2ac4940f,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 955493386977602497, guid: a985298b47e1a924aa071f6a2ac4940f,
         type: 3}
@@ -4011,7 +4011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754c4f09347cebe428a0a71c3e85824f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutorial: {fileID: 184447781}
+  tutorial: {fileID: 1735639846}
 --- !u!212 &1160621487
 SpriteRenderer:
   m_ObjectHideFlags: 0
