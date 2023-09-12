@@ -4290,7 +4290,7 @@ PrefabInstance:
     - target: {fileID: 8103912723477020787, guid: 7e0e9bd750bbb074b908b1a9be9e6ce9,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -28.000244
+      value: -28.00026
       objectReference: {fileID: 0}
     - target: {fileID: 8103912724289569972, guid: 7e0e9bd750bbb074b908b1a9be9e6ce9,
         type: 3}
@@ -4688,6 +4688,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1518151317725789610, guid: 88f39d70e81ed9846b85d3e515208b29,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6118309652317973873, guid: 88f39d70e81ed9846b85d3e515208b29,
         type: 3}
       propertyPath: healthBubble
@@ -4753,6 +4758,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8990305548869788478, guid: 88f39d70e81ed9846b85d3e515208b29,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88f39d70e81ed9846b85d3e515208b29, type: 3}
 --- !u!1 &341183588
@@ -4794,11 +4804,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -158209014163932632, guid: a985298b47e1a924aa071f6a2ac4940f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 955493386977602497, guid: a985298b47e1a924aa071f6a2ac4940f,
         type: 3}
       propertyPath: healthBubble
       value: 
       objectReference: {fileID: 594821804}
+    - target: {fileID: 2695960015672583566, guid: a985298b47e1a924aa071f6a2ac4940f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4342360781542251935, guid: a985298b47e1a924aa071f6a2ac4940f,
         type: 3}
       propertyPath: m_Name
@@ -4869,6 +4889,11 @@ PrefabInstance:
       propertyPath: CharacterType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5409067555915941376, guid: a985298b47e1a924aa071f6a2ac4940f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a985298b47e1a924aa071f6a2ac4940f, type: 3}
 --- !u!1 &374359193
@@ -4922,7 +4947,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &402180076
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5190,7 +5215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754c4f09347cebe428a0a71c3e85824f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutorial: {fileID: 402180075}
+  tutorial: {fileID: 1262806134}
 --- !u!212 &545460568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5507,7 +5532,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -149.9998, y: 100}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 762, y: 299}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &659103329
 MonoBehaviour:
@@ -5737,7 +5762,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -149.9998, y: 100}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 612, y: 183}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &870053713
 MonoBehaviour:
@@ -6219,10 +6244,10 @@ RectTransform:
   m_Father: {fileID: 659103328}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 381, y: -149.5}
+  m_SizeDelta: {x: 682, y: 219}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1179455426
 MonoBehaviour:
@@ -6257,8 +6282,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "?\uD0A4\uB97C \uB20C\uB7EC\n\uD050\uBE0C \uC0DD\uC131\n?\uD0A4\uB97C \uC7AC\uC785\uB825\uC2DC
-    \uD050\uBE0C\uB193\uAE30\n?\uD0A4 \uC785\uB825\uC2DC \uADF8\uB7A9\n"
+  m_Text: "\uC704\uC790\uB4DC\uB294 Space\uD0A4\uB97C \uB20C\uB7EC\n\uD050\uBE0C
+    \uC0DD\uC131\nSpace\uD0A4\uB97C \uC7AC\uC785\uB825\uC2DC \uD050\uBE0C\uB193\uAE30\nX\uD0A4
+    \uC785\uB825\uC2DC \uD050\uBE0C \uADF8\uB7A9"
 --- !u!222 &1179455427
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6285,7 +6311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1262806135
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6476,10 +6502,10 @@ RectTransform:
   m_Father: {fileID: 2024572232}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 306, y: -91.5}
+  m_SizeDelta: {x: 532, y: 103}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1454482272
 MonoBehaviour:
@@ -6514,7 +6540,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "?\uD0A4\uB97C \uB20C\uB7EC\n\uC810\uD504\uAC00 \uAC00\uB2A5\uD569\uB2C8\uB2E4"
+  m_Text: "\uB7EC\uB108\uB294 Space\uD0A4\uB97C \uB20C\uB7EC\n\uC810\uD504\uAC00
+    \uAC00\uB2A5\uD569\uB2C8\uB2E4"
 --- !u!222 &1454482273
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6725,10 +6752,10 @@ RectTransform:
   m_Father: {fileID: 870053712}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 306, y: -91.5}
+  m_SizeDelta: {x: 532, y: 103}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1686154412
 MonoBehaviour:
@@ -6763,7 +6790,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "?\uD0A4\uB97C \uB20C\uB7EC\n\uC288\uD305\uC774 \uAC00\uB2A5\uD569\uB2C8\uB2E4"
+  m_Text: "\uAC70\uB108\uB294 Space\uD0A4\uB97C \uB20C\uB7EC\n\uC288\uD305\uC774
+    \uAC00\uB2A5\uD569\uB2C8\uB2E4"
 --- !u!222 &1686154413
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6871,7 +6899,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1709115127
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7157,6 +7185,11 @@ PrefabInstance:
       propertyPath: VerticalForce
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: -7088912045573092815, guid: d08b9ff591fdd49479d9bc80109447d5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4392709508709004464, guid: d08b9ff591fdd49479d9bc80109447d5,
         type: 3}
       propertyPath: Square
@@ -7173,11 +7206,21 @@ PrefabInstance:
       propertyPath: SquareOffset.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4129779078348683651, guid: d08b9ff591fdd49479d9bc80109447d5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4966112971381769970, guid: d08b9ff591fdd49479d9bc80109447d5,
         type: 3}
       propertyPath: healthBubble
       value: 
       objectReference: {fileID: 1705980183}
+    - target: {fileID: 7836347028047218877, guid: d08b9ff591fdd49479d9bc80109447d5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8496778866208284938, guid: d08b9ff591fdd49479d9bc80109447d5,
         type: 3}
       propertyPath: CharacterType
@@ -7364,7 +7407,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -149.9998, y: 100}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 612, y: 183}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2024572233
 MonoBehaviour:
@@ -7576,7 +7619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754c4f09347cebe428a0a71c3e85824f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutorial: {fileID: 402180075}
+  tutorial: {fileID: 1709115126}
 --- !u!212 &2071197241
 SpriteRenderer:
   m_ObjectHideFlags: 0

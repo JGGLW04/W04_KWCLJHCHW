@@ -387,10 +387,16 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\uB9C8\uC9C0\uB9C9 \uC2A4\uD14C\uC774\uC9C0"
       objectReference: {fileID: 0}
+    - target: {fileID: 4326184527038917639, guid: c43a2b42dd3087b4bbb3aa23709520c3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 96df63776a5cee94caded0c936e6f81f,
+        type: 3}
     - target: {fileID: 4326263030703929675, guid: c43a2b42dd3087b4bbb3aa23709520c3,
         type: 3}
       propertyPath: m_Text
-      value: Stage2-2
+      value: Stage7
       objectReference: {fileID: 0}
     - target: {fileID: 4439687711887693737, guid: c43a2b42dd3087b4bbb3aa23709520c3,
         type: 3}
@@ -669,10 +675,16 @@ PrefabInstance:
       propertyPath: m_Text
       value: "4\uBC88\uC9F8 \uC2A4\uD14C\uC774\uC9C0"
       objectReference: {fileID: 0}
+    - target: {fileID: 4326184527038917639, guid: c43a2b42dd3087b4bbb3aa23709520c3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2982766f6c89b894486632104f615a22,
+        type: 3}
     - target: {fileID: 4326263030703929675, guid: c43a2b42dd3087b4bbb3aa23709520c3,
         type: 3}
       propertyPath: m_Text
-      value: Test_Stage4
+      value: Stage4
       objectReference: {fileID: 0}
     - target: {fileID: 4439687711887693737, guid: c43a2b42dd3087b4bbb3aa23709520c3,
         type: 3}
@@ -1319,10 +1331,16 @@ PrefabInstance:
       propertyPath: m_Text
       value: "2\uBC88\uC9F8 \uC2A4\uD14C\uC774\uC9C0"
       objectReference: {fileID: 0}
+    - target: {fileID: 4326184527038917639, guid: c43a2b42dd3087b4bbb3aa23709520c3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6cc46c5385f01c8478187dd6247c939f,
+        type: 3}
     - target: {fileID: 4326263030703929675, guid: c43a2b42dd3087b4bbb3aa23709520c3,
         type: 3}
       propertyPath: m_Text
-      value: Test_Stage2
+      value: Stage2
       objectReference: {fileID: 0}
     - target: {fileID: 4439687711887693737, guid: c43a2b42dd3087b4bbb3aa23709520c3,
         type: 3}
@@ -1627,14 +1645,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6102941, g: 0.5340073, b: 0.5576825, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bdc02bc4264c0d741a4a7a3c5cf6ed69, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1857,10 +1875,16 @@ PrefabInstance:
       propertyPath: m_Text
       value: "6\uBC88\uC9F8 \uC2A4\uD14C\uC774\uC9C0"
       objectReference: {fileID: 0}
+    - target: {fileID: 4326184527038917639, guid: c43a2b42dd3087b4bbb3aa23709520c3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9944e0b56cd0ad14dbadba0b35cb03d4,
+        type: 3}
     - target: {fileID: 4326263030703929675, guid: c43a2b42dd3087b4bbb3aa23709520c3,
         type: 3}
       propertyPath: m_Text
-      value: Stage2-1
+      value: Stage6
       objectReference: {fileID: 0}
     - target: {fileID: 4439687711887693737, guid: c43a2b42dd3087b4bbb3aa23709520c3,
         type: 3}
@@ -2546,10 +2570,16 @@ PrefabInstance:
       propertyPath: m_Text
       value: "1\uBC88\uC9F8 \uC2A4\uD14C\uC774\uC9C0"
       objectReference: {fileID: 0}
+    - target: {fileID: 4326184527038917639, guid: c43a2b42dd3087b4bbb3aa23709520c3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ff581d9f4bfd6194ea64528624d17fe2,
+        type: 3}
     - target: {fileID: 4326263030703929675, guid: c43a2b42dd3087b4bbb3aa23709520c3,
         type: 3}
       propertyPath: m_Text
-      value: Test_Stage1
+      value: Stage1
       objectReference: {fileID: 0}
     - target: {fileID: 4439687711887693737, guid: c43a2b42dd3087b4bbb3aa23709520c3,
         type: 3}
@@ -2988,10 +3018,16 @@ PrefabInstance:
       propertyPath: m_Text
       value: "5\uBC88\uC9F8 \uC2A4\uD14C\uC774\uC9C0"
       objectReference: {fileID: 0}
+    - target: {fileID: 4326184527038917639, guid: c43a2b42dd3087b4bbb3aa23709520c3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5831acc4ab328545bfd7bcc37da3e47,
+        type: 3}
     - target: {fileID: 4326263030703929675, guid: c43a2b42dd3087b4bbb3aa23709520c3,
         type: 3}
       propertyPath: m_Text
-      value: Test_Stage5
+      value: Stage5
       objectReference: {fileID: 0}
     - target: {fileID: 4439687711887693737, guid: c43a2b42dd3087b4bbb3aa23709520c3,
         type: 3}
@@ -3977,6 +4013,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2119754420}
     m_Modifications:
+    - target: {fileID: 4326184527038917639, guid: c43a2b42dd3087b4bbb3aa23709520c3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b7250ac26a55384d9f0241472aa6057,
+        type: 3}
+    - target: {fileID: 4326263030703929675, guid: c43a2b42dd3087b4bbb3aa23709520c3,
+        type: 3}
+      propertyPath: m_Text
+      value: Stage3
+      objectReference: {fileID: 0}
     - target: {fileID: 4439687711887693737, guid: c43a2b42dd3087b4bbb3aa23709520c3,
         type: 3}
       propertyPath: m_Name

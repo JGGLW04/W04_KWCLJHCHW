@@ -20,7 +20,7 @@ PrefabInstance:
     - target: {fileID: -4983327325892089724, guid: c2798a1dd0f89e941be6a5bcc0590baa,
         type: 3}
       propertyPath: JumpHeight
-      value: 1.125
+      value: 2.125
       objectReference: {fileID: 0}
     - target: {fileID: -4983327325892089724, guid: c2798a1dd0f89e941be6a5bcc0590baa,
         type: 3}
@@ -30,7 +30,7 @@ PrefabInstance:
     - target: {fileID: -4983327325892089724, guid: c2798a1dd0f89e941be6a5bcc0590baa,
         type: 3}
       propertyPath: RunJumpHeight
-      value: 2.125
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2479366915460033941, guid: c2798a1dd0f89e941be6a5bcc0590baa,
         type: 3}
