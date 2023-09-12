@@ -30,6 +30,8 @@ public class CustomCharacterSwapManager : CorgiMonoBehaviour, MMEventListener<Co
 	protected CharacterSwap[] _characterSwapArray;
 	protected MMCircularList<CharacterSwap> _characterSwapList; 
 	protected CorgiEngineEvent _swapEvent = new CorgiEngineEvent(CorgiEngineEventTypes.CharacterSwap);
+	
+	public InputManager _inputManager;
 
 	/// <summary>
 	/// Grabs all CharacterSwap equipped characters in the scene and stores them in a list, sorted by Order
@@ -81,7 +83,7 @@ public class CustomCharacterSwapManager : CorgiMonoBehaviour, MMEventListener<Co
 	/// </summary>
 	protected virtual void HandleInput()
 	{
-		#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
+		/*#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
 			if (Keyboard.current[SwapKey].wasPressedThisFrame)
 			{
 				SwapCharacter();
@@ -91,7 +93,12 @@ public class CustomCharacterSwapManager : CorgiMonoBehaviour, MMEventListener<Co
 		{
 			SwapCharacter();
 		}
-		#endif
+		#endif*/
+		
+		if (_inputManager.SwitchCharacterButton.State.CurrentState == MMInput.ButtonStates.ButtonDown)
+		{
+			SwapCharacter();
+		}
 	}
 
 	/// <summary>
