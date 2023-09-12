@@ -226,6 +226,15 @@ namespace MoreMountains.CorgiEngine
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Bomb"",
+                    ""type"": ""Button"",
+                    ""id"": ""214a1265-2bc6-435d-b8d4-d31d9649303e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -277,6 +286,61 @@ namespace MoreMountains.CorgiEngine
                     ""name"": ""right"",
                     ""id"": ""d7bfdd17-5246-4bde-aa16-bcb3ea0467a1"",
                     ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""PrimaryMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""ArrowKey"",
+                    ""id"": ""1908203a-8180-4cca-aad9-9357f7ff0a84"",
+                    ""path"": ""2DVector(mode=2)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryMovement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""583b5f34-8dbd-467e-9bcc-353fa1c8be01"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""PrimaryMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""ea059571-0288-4ae9-94e3-3403953d5900"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""PrimaryMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""8a9d8a09-17cd-464b-8728-4b25b4f66cd1"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""PrimaryMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""cceea830-3e91-4d1b-baca-96452bd3a025"",
+                    ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -363,6 +427,17 @@ namespace MoreMountains.CorgiEngine
                 },
                 {
                     ""name"": """",
+                    ""id"": ""cff8dbb1-98c8-4666-95c2-02b08b167ba6"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""c74dc322-5120-478a-af7a-0d716b64cfc1"",
                     ""path"": ""<Keyboard>/j"",
                     ""interactions"": ""Press(behavior=2)"",
@@ -398,6 +473,17 @@ namespace MoreMountains.CorgiEngine
                     ""name"": """",
                     ""id"": ""63bf589f-5ef3-4931-bb6e-63038c725e66"",
                     ""path"": ""<Keyboard>/k"",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""SecondaryShoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""245749d3-19d8-4cac-b3e8-37af44204679"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -497,6 +583,17 @@ namespace MoreMountains.CorgiEngine
                     ""name"": """",
                     ""id"": ""5a170d0f-bc8a-4a8d-a2d3-31939a85f104"",
                     ""path"": ""<Keyboard>/p"",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""SwitchCharacter"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""10f8f161-c06f-4dec-b94b-de8e1acad618"",
+                    ""path"": ""<Keyboard>/z"",
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -660,6 +757,17 @@ namespace MoreMountains.CorgiEngine
                 },
                 {
                     ""name"": """",
+                    ""id"": ""7d3576bd-7847-4792-84c6-4af27b7ad973"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Grab"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""d9fae8f2-4551-45fd-a9e6-8a9b1f34964c"",
                     ""path"": ""<Keyboard>/h"",
                     ""interactions"": ""Press(behavior=2)"",
@@ -676,6 +784,17 @@ namespace MoreMountains.CorgiEngine
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
+                    ""action"": ""Throw"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""85ea5aaa-3f43-4b79-a8b2-16e05dcc8c73"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
                     ""action"": ""Throw"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -721,6 +840,39 @@ namespace MoreMountains.CorgiEngine
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
                     ""action"": ""Spawn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e9602f45-be93-4000-a0eb-877df10706ab"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Spawn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""67370f2a-2bc8-43ee-a4de-61e75d13c865"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Bomb"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fd4509ad-120c-40be-9f06-9f0c2f4607d7"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Bomb"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -776,6 +928,7 @@ namespace MoreMountains.CorgiEngine
             m_PlayerControls_TimeControl = m_PlayerControls.FindAction("TimeControl", throwIfNotFound: true);
             m_PlayerControls_Roll = m_PlayerControls.FindAction("Roll", throwIfNotFound: true);
             m_PlayerControls_Spawn = m_PlayerControls.FindAction("Spawn", throwIfNotFound: true);
+            m_PlayerControls_Bomb = m_PlayerControls.FindAction("Bomb", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -859,6 +1012,7 @@ namespace MoreMountains.CorgiEngine
         private readonly InputAction m_PlayerControls_TimeControl;
         private readonly InputAction m_PlayerControls_Roll;
         private readonly InputAction m_PlayerControls_Spawn;
+        private readonly InputAction m_PlayerControls_Bomb;
         public struct PlayerControlsActions
         {
             private @CorgiEngineInputActions m_Wrapper;
@@ -885,6 +1039,7 @@ namespace MoreMountains.CorgiEngine
             public InputAction @TimeControl => m_Wrapper.m_PlayerControls_TimeControl;
             public InputAction @Roll => m_Wrapper.m_PlayerControls_Roll;
             public InputAction @Spawn => m_Wrapper.m_PlayerControls_Spawn;
+            public InputAction @Bomb => m_Wrapper.m_PlayerControls_Bomb;
             public InputActionMap Get() { return m_Wrapper.m_PlayerControls; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -960,6 +1115,9 @@ namespace MoreMountains.CorgiEngine
                 @Spawn.started += instance.OnSpawn;
                 @Spawn.performed += instance.OnSpawn;
                 @Spawn.canceled += instance.OnSpawn;
+                @Bomb.started += instance.OnBomb;
+                @Bomb.performed += instance.OnBomb;
+                @Bomb.canceled += instance.OnBomb;
             }
 
             private void UnregisterCallbacks(IPlayerControlsActions instance)
@@ -1030,6 +1188,9 @@ namespace MoreMountains.CorgiEngine
                 @Spawn.started -= instance.OnSpawn;
                 @Spawn.performed -= instance.OnSpawn;
                 @Spawn.canceled -= instance.OnSpawn;
+                @Bomb.started -= instance.OnBomb;
+                @Bomb.performed -= instance.OnBomb;
+                @Bomb.canceled -= instance.OnBomb;
             }
 
             public void RemoveCallbacks(IPlayerControlsActions instance)
@@ -1089,6 +1250,7 @@ namespace MoreMountains.CorgiEngine
             void OnTimeControl(InputAction.CallbackContext context);
             void OnRoll(InputAction.CallbackContext context);
             void OnSpawn(InputAction.CallbackContext context);
+            void OnBomb(InputAction.CallbackContext context);
         }
     }
 }

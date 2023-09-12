@@ -14878,6 +14878,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2b2ba87fea74204e8cb91290983aaca, type: 3}
+--- !u!114 &676857966 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3104879999224622220, guid: e2b2ba87fea74204e8cb91290983aaca,
+    type: 3}
+  m_PrefabInstance: {fileID: 676857965}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 266fc2237c84669498e61feb6ee377f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &705044606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40149,6 +40161,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 662750335150953152, guid: d08b9ff591fdd49479d9bc80109447d5,
+        type: 3}
+      propertyPath: Order
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4129779078348683651, guid: d08b9ff591fdd49479d9bc80109447d5,
         type: 3}
       propertyPath: m_Enabled
@@ -57834,6 +57851,11 @@ PrefabInstance:
       propertyPath: LadderClimbingSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4655379136348618739, guid: a985298b47e1a924aa071f6a2ac4940f,
+        type: 3}
+      propertyPath: Order
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a985298b47e1a924aa071f6a2ac4940f, type: 3}
 --- !u!114 &1793171936 stripped
@@ -65881,6 +65903,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SwapManager
       objectReference: {fileID: 0}
+    - target: {fileID: 218092527132009465, guid: badfaadd2304647409ee8ead57618702,
+        type: 3}
+      propertyPath: _inputManager
+      value: 
+      objectReference: {fileID: 676857966}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: badfaadd2304647409ee8ead57618702, type: 3}
 --- !u!1 &1617570974554358

@@ -35,6 +35,7 @@ public class VikingAbilitySpawnUniqueObject : CharacterAbility
     public LayerMask DetectionLayerMask = LayerManager.PlatformsLayerMask | LayerManager.EnemiesLayerMask;
     
     protected VikingGrabCarryAndThrow _vikingGrabCarryAndThrow;
+    protected VikingAdvancedGrabCarryAndThrow _vikingAdvancedGrabCarryAndThrow;
     
     protected GameObject _spawnedObject;
     
@@ -50,6 +51,7 @@ public class VikingAbilitySpawnUniqueObject : CharacterAbility
     {
         base.Initialization();
         _vikingGrabCarryAndThrow = _character?.FindAbility<VikingGrabCarryAndThrow>();
+        _vikingAdvancedGrabCarryAndThrow = _character?.FindAbility<VikingAdvancedGrabCarryAndThrow>();
     }
 
     protected override void HandleInput()
@@ -113,6 +115,10 @@ public class VikingAbilitySpawnUniqueObject : CharacterAbility
             _vikingGrabCarryAndThrow.CarriedObject = null;
             _vikingGrabCarryAndThrow.CarryingID = -1;
             _vikingGrabCarryAndThrow.Carrying = false;
+            // Advanced Carry 모드 취소
+            _vikingAdvancedGrabCarryAndThrow.CarriedObject = null;
+            _vikingAdvancedGrabCarryAndThrow.CarryingID = -1;
+            _vikingAdvancedGrabCarryAndThrow.Carrying = false;
         }
         
         if (_character.IsFacingRight)
