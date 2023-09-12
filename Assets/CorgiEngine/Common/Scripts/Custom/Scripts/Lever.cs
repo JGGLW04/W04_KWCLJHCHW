@@ -37,7 +37,7 @@ public class Lever : MonoBehaviour
         if (SwitchOn != null)
         {
             SwitchOn.Invoke();
-            this.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+            this.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
         }
     }
 }
