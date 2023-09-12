@@ -27,8 +27,8 @@ EditorBuildSettings:
     path: Assets/Study/CHW/Scene/Test_Stage6.unity
     guid: 929d9299017476645a61db6b6f23de73
   - enabled: 1
-    path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Stage2-1.unity
-    guid: 1307403c19e08e14d8d4df9439ecd4dd
+    path: Assets/Study/LJH/Scene/Stage2-1.unity
+    guid: d6e0e04984f931e4385b5fb31a63a720
   - enabled: 1
     path: Assets/Study/LJH/Scene/Stage2-2.unity
     guid: 9e84818bbb66ad445928004361c96ec0
