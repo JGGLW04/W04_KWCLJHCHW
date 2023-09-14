@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Study/LJH/Scene/Title.unity
+    guid: fc21eb004ab313b4e9bf3ff0c54895bf
+  - enabled: 1
     path: Assets/Study/LJH/Scene/VikingLevelSelection.unity
     guid: 1ffa1cc0eaeb59b4c84cf7f8e572247f
   - enabled: 1
@@ -254,4 +257,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/MMAdditiveLoadingScreenSimple.unity
     guid: 945e5b97212e8e74ebcd35bddde3970c
+  - enabled: 1
+    path: Assets/Study/LJH/Scene/Ending.unity
+    guid: d6d285e22abfac544ac4f8173581c554
   m_configObjects: {}

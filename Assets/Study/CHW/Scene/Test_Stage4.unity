@@ -14864,7 +14864,7 @@ MonoBehaviour:
   MasterHealth: {fileID: 0}
   OnlyDamageMaster: 1
   KillOnMasterHealthDeath: 0
-  TargetDamageResistanceProcessor: {fileID: 0}
+  TargetDamageResistanceProcessor: {fileID: 1479784955387523836}
 --- !u!114 &1479784955387523839
 MonoBehaviour:
   m_ObjectHideFlags: 0
